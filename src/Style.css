@@ -8,20 +8,18 @@ body, h1, p {
     --first-color: #F43397;
 }
 
-@font-face {
-    font-family: giveer-bold;
-    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProBold.woff);
+@font-face{
+    font-family: giveer-liter;
+    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProLightRegular.woff);
 }
-@font-face {
-    font-family: giveer-lite;
-    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProRegular.woff);
-}
-
 @font-face {
     font-family: giveer-medium;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProMediumRegular.woff);
 }
-
+@font-face {
+    font-family: giveer-bold;
+    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProBold.woff);
+}
 .center-div{
     display: flex;
     height: 100vh;
