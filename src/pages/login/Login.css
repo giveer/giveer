@@ -1,0 +1,45 @@
+body{
+    background: #f7abca;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background: linear-gradient(90deg, rgba(255,0,97,1) 0%, rgba(255,255,255,1) 100%); */
+}
+#email, #password{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    background: rgb(224, 223, 223);
+    border: none;
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+.log{
+    background: #ffffff;
+    width: 400px;;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#logbtn{
+    margin:30px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    color: #ffffff;
+    background: #f43397;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.log_head{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: #f43397;
+}
+#forgetpass{
+    text-align: left;
+}
