@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Comingsoon from './pages/coming soon/Comingsoon';
-import Signin from './pages/login/Signin'
+import Signin from './pages/login/Signin';
 import Signup from './pages/sign up/Singnup';
+import Testing from './pages/testing/Testing';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -18,6 +19,7 @@ export default function Main() {
           <Route path="/" element={<Comingsoon />} />
           <Route path="login" element={<Signin />} />
           <Route path="signup" element={<Signup />} /> 
+          <Route path="testing" element={<Testing/>} />
       </Routes>
     </BrowserRouter>
   );
