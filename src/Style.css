@@ -22,3 +22,9 @@ body, h1, p {
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProMediumRegular.woff);
 }
 
+.center-div{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

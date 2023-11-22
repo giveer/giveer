@@ -1,5 +1,6 @@
 import React from "react";
 import './Comingsoon.css';
+import '../../'
 function Comingsoon() {
     return (
       <div className='coming_soon'>
