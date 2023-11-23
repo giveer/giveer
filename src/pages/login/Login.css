@@ -11,11 +11,19 @@ body{
     background: rgb(224, 223, 223);
     border: none;
     width: 300px;
+    font-family: giveer-medium;
     font-size: 15px;
+}
+.page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .log{
     background: #ffffff;
-    width: 400px;;
+    width: 400px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -37,9 +45,27 @@ body{
 .log_head{
     font-weight: bold;
     text-align: center;
+    margin: 30px 50px;
     font-size: 30px;
     color: #f43397;
 }
 #forgetpass{
     text-align: right !important;
+}
+.or{
+    display: flex;
+}
+hr{
+    width: 115px;
+    height: 0px;
+}
+.space{
+    padding: 0 25px;
+}
+i{
+    margin: 10px;
+    font-size: 20px;
+}
+.icon{
+    margin: 30px 30px;
 }
