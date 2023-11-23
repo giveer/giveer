@@ -1,9 +1,9 @@
 @import "../../Style.css";
 
-body{
+/* body{
     background-color: #f7abca;
     font-family: giveer-medium;
-}
+} */
 #email, #password{
     padding: 10px;
     margin: 20px;
