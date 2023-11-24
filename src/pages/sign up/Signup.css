@@ -1,0 +1,8 @@
+@import url(../../Style.css);
+
+.g-signup-p{
+    font-family: giveer-regular;
+    color: var(--third-color);
+    text-align: center;
+    margin: 0 15px;
+}
