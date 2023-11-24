@@ -1,20 +1,29 @@
+import './Forgot.css'
+
 function Forgot() {
     return (
         <div className="center-div">
             <div>
-                <h1>Forgot Password</h1>
-                <div className=""><p>Enter Registered Email Address</p></div>
-                <label><i class="fa-regular fa-envelope"></i></label>
-                <input type="text" className="forgotemail"></input>
-                <a href="#">Back to Signin</a>
-                <input type="button" className="forgotemailbtn" value="Send"></input>
-                <p>Or</p>
-                <div className='icon'>
-                    <label><i class="fa-brands fa-google"></i></label>
-                    <label></label>
+                <h4>Forgot Password</h4>
+                <div><p>Enter Registered Email Address</p></div>
+                <div className="g-input-field-div-1">
+                    <label className='g-lable-1'><i class="fa-regular fa-envelope g-input-icon-1"></i></label>
+                    <input type="text" name="email" className="g-input-field-1" placeholder="Email" />
+                </div>
+                <div className='bts'>
+                    <a className='bts' href="#">Back to Signin</a>
+                </div>
+                <div className="g-input-field-div-1">
+                    <button type="button" className="g-btn-1">Send</button>
+                </div>
+                <div className='or'>
+                    <hr></hr><h5>Or</h5><hr></hr>
+                </div>
+                <div className='newuser'>
+                    <a className='newuser' href="#">New User?</a>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

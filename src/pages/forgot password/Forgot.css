@@ -1,0 +1,39 @@
+@import url(../../Style.css);
+
+p{
+    font-family: giveer-regular;
+    color: var(--third-color);
+    text-align: center;
+    margin: 0 15px;
+}
+h4{
+    font-family: giveer-medium;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+    color: var(--first-color);
+}
+.bts{
+    text-align: center;
+    text-decoration: none;
+    color: var(--third-color);
+}
+h5{
+    text-align: center;
+    padding: 0 10%;
+    margin: 0px;
+}
+.newuser{
+    font-family: giveer-regular;
+    color: var(--third-color);
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+    /* cursor: pointer; */
+}
+.or{
+    display: flex;
+}
+hr{
+    width: 50%;
+}

@@ -1,14 +1,10 @@
 @import "../../Style.css";
 
-/* body{
-    background-color: #f7abca;
-    font-family: giveer-medium;
-} */
-#email, #password{
+.g-input-field-div-1{
     padding: 10px;
-    margin: 20px;
+    /* margin-top: 20px; */
     border-radius: 5px;
-    background: rgb(224, 223, 223);
+    /* background: rgb(224, 223, 223); */
     border: none;
     width: 300px;
     font-family: giveer-medium;
@@ -49,9 +45,10 @@
     font-size: 30px;
     color: #f43397;
 }
-#forgetpass{
-    text-align: right !important;
-}
+/* #forgetpass{
+    display: flex;
+    text-align: right;
+} */
 .or{
     display: flex;
 }
@@ -61,11 +58,4 @@ hr{
 }
 .space{
     padding: 0 25px;
-}
-i{
-    margin: 10px;
-    font-size: 20px;
-}
-.icon{
-    margin: 30px 30px;
 }

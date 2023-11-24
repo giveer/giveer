@@ -7,31 +7,22 @@ const Signin = () => {
             <div className='log'>
                 <div className='log_head'><p>Login here</p></div>
                 <div><p>Well Come Back We Have Missed You</p></div>
-                <div className="email">
-                    <label><i class="fa-regular fa-envelope"></i></label>
-                    <input type="text" id='email' placeholder='Email' />
+                <div className="g-input-field-div-1">
+                    <label className='g-lable-1'><i class="fa-regular fa-envelope g-input-icon-1"></i></label>
+                    <input type="text" name='email' className="g-input-field-1" placeholder='Email' />
                 </div>
-                <div className="password">
-                    <label><i class="fa fa-key" aria-hidden="true"></i></label>
-                    <input type="password" id='password' placeholder='Password' />
+                <div className="g-input-field-div-1">
+                    <label className='g-lable-1'><i class="fa fa-key g-input-icon-1" aria-hidden="true"></i></label>
+                    <input type="password" name='password' className="g-input-field-1" placeholder='Password' />
                 </div>
                 <div className="forgetpass">
                     <a href="" id='forgetpass'>Forget Password?</a>
                 </div>
-                <div className="logbtn">
-                    <button type="button" id='logbtn'>Login</button>
+                <div className="g-input-field-div-1">
+                    <button type="button" className="g-btn-1">Login</button>
                 </div>
                 <div className='or'>
                     <hr></hr><p className='space'>Or</p><hr></hr>
-                </div>
-                <div className='icon'>
-                    <label><i class="fa-brands fa-google"></i></label>
-                    <label><i class="fa-brands fa-facebook"></i></label>
-                    <label><i class="fa-brands fa-instagram"></i></label>
-                    <label><i class="fa-brands fa-telegram"></i></label>
-                    <label><i class="fa-brands fa-whatsapp"></i></label>
-                    <label><i class="fa-brands fa-youtube"></i></label>
-                    <label><i class="fa-brands fa-x-twitter"></i></label>
                 </div>
             </div>
         </div>
