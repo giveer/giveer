@@ -1,0 +1,26 @@
+@import "../../Style.css";
+
+.g-signup-p{
+    font-family: giveer-regular;
+    color: var(--third-color);
+    text-align: center;
+    margin: 0 15px;
+}
+.forget-password{
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+.or{
+    display: flex;
+}
+hr{
+    width: 115px;
+    height: 0px;
+}
+.space{
+    padding: 0 25px;
+}
+.for-p{
+    margin-top: 20px;
+}

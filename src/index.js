@@ -22,7 +22,7 @@ export default function Main() {
     <BrowserRouter>
       <Routes>
           <Route path="/" element={<Comingsoon />} />
-          <Route path="login" element={<Signin />} />
+          <Route path="signin" element={<Signin />} />
           <Route path="signup" element={<Signup />} /> 
           <Route path="testing" element={<Testing/>} />
           <Route path="forgot" element={<Forgot/>} />
