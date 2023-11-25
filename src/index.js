@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Comingsoon from './pages/coming soon/Comingsoon';
 
-import Signin from './pages/login/Signin';
+import Signin from './pages/sign in/Signin';
 import Signup from './pages/sign up/Signup';
 import Testing from './pages/testing/Testing';
 import Forgot from './pages/forgot password/Forgot';
