@@ -11,7 +11,7 @@ function Forgot() {
                     <input type="text" name="email" className="g-input-field-1" placeholder="Email" />
                 </div>
                 <div className='bts'>
-                    <a className='bts' href="#">Back to Signin</a>
+                    <a className='bts' href="login">Back to Signin</a>
                 </div>
                 <div className="g-input-field-div-1">
                     <button type="button" className="g-btn-1">Send</button>
@@ -20,7 +20,7 @@ function Forgot() {
                     <hr></hr><h5>Or</h5><hr></hr>
                 </div>
                 <div className='newuser'>
-                    <a className='newuser' href="#">New User?</a>
+                    <a className='newuser' href="signup">New User?</a>
                 </div>
             </div>
         </div >

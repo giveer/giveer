@@ -1,5 +1,5 @@
 import React from 'react'
-import './Login.css'
+import './Login.css';
 
 const Signin = () => {
     return (
@@ -16,7 +16,7 @@ const Signin = () => {
                     <input type="password" name='password' className="g-input-field-1" placeholder='Password' />
                 </div>
                 <div className="forgetpass">
-                    <a href="" id='forgetpass'>Forget Password?</a>
+                    <a href="forgot" id='forgetpass'>Forget Password?</a>
                 </div>
                 <div className="g-input-field-div-1">
                     <button type="button" className="g-btn-1">Login</button>
