@@ -1,21 +1,25 @@
 @import "../../Style.css";
 
-/* body{
-    background-color: #f7abca;
-    font-family: giveer-medium;
-} */
-#email, #password{
+.g-input-field-div-1{
     padding: 10px;
-    margin: 20px;
+    /* margin-top: 20px; */
     border-radius: 5px;
-    background: rgb(224, 223, 223);
+    /* background: rgb(224, 223, 223); */
     border: none;
     width: 300px;
+    font-family: giveer-medium;
     font-size: 15px;
+}
+.page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .log{
     background: #ffffff;
-    width: 400px;;
+    width: 400px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -37,9 +41,24 @@
 .log_head{
     font-weight: bold;
     text-align: center;
+    margin: 30px 50px;
     font-size: 30px;
     color: #f43397;
 }
 #forgetpass{
-    text-align: right !important;
+    display: flex;
+    text-align: right;
+}
+.or{
+    display: flex;
+}
+hr{
+    width: 115px;
+    height: 0px;
+}
+.space{
+    padding: 0 25px;
+}
+.for-p{
+    margin-top: 20px;
 }
