@@ -45,10 +45,10 @@
     font-size: 30px;
     color: #f43397;
 }
-/* #forgetpass{
+#forgetpass{
     display: flex;
     text-align: right;
-} */
+}
 .or{
     display: flex;
 }
@@ -58,4 +58,7 @@ hr{
 }
 .space{
     padding: 0 25px;
+}
+.for-p{
+    margin-top: 20px;
 }

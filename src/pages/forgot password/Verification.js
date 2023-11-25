@@ -1,8 +1,10 @@
+import "../../Style.css"
+
 function Verification(){
     return(
         <div className="center-div">
             <div>
-                <h1>Enter Verification Code</h1>
+                <h4>Enter Verification Code</h4>
                 <form>
                     
                 </form>
