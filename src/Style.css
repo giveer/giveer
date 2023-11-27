@@ -1,5 +1,9 @@
 /* Resetting default margin and padding for all elements */
-body, h1, p, div{
+body,
+html,
+h1,
+p,
+div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,39 +13,45 @@ body, h1, p, div{
     --first-color: #F43397;
     --third-color: #777a7e;
 
-    --first-hover-color:#d8006c;
+    --first-hover-color: #d8006c;
     --bg-lite-gray: #edeef0;
-    
+
 }
 
-@font-face{
+@font-face {
     font-family: giveer-liter;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProLightRegular.woff);
 }
+
 @font-face {
     font-family: giveer-medium;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProMediumRegular.woff);
 }
+
 @font-face {
     font-family: giveer-bold;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProBold.woff);
 }
+
 @font-face {
     font-family: giveer-regular;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProRegular.woff);
 }
-body{
+
+body {
     font-family: giveer-regular;
 }
-.center-div{
+
+.center-div {
     display: flex;
     height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
 
 /*Heading Style*/
-.g-h-4{
+.g-h-4 {
     font-family: giveer-medium;
     text-align: center;
     font-size: 1.2rem;
@@ -50,34 +60,47 @@ body{
 }
 
 /*Input Field Style*/
-.g-input-field-div-1{
+.g-input-field-div-1 {
     margin: 7%;
+    flex: 1;
     /* width: 100%; */
 }
-.g-input-field-1{
+
+.g-input-field-1 {
     font-family: giveer-regular;
-    width: 86%;
+    width: 100%;
     padding: 8px 8px 8px 30px;
     border-radius: 3px;
     border: none;
     background-color: var(--bg-lite-gray);
+    border: 2px solid var(--bg-lite-gray);
     color: var(--third-color);
+    box-sizing: border-box;
+    outline: none;
 }
-.g-input-field-1::placeholder{
+
+.g-input-field-1:focus {
+    border: 2px solid var(--first-color);
+    /* Apply the variable to border color */
+}
+
+.g-input-field-1::placeholder {
     font-family: giveer-regular;
 }
-.g-input-icon-1{
+
+.g-input-icon-1 {
     position: absolute;
     top: 5px;
     left: 7px;
     color: var(--third-color);
 }
-.g-lable-1{
+
+.g-lable-1 {
     position: relative;
 }
 
 /*Button Style*/
-.g-btn-1{
+.g-btn-1 {
     font-family: 'giveer-medium';
     background-color: var(--first-color);
     color: white;
@@ -89,6 +112,6 @@ body{
     cursor: pointer;
 }
 
-.g-btn-1:hover{
+.g-btn-1:hover {
     background-color: var(--first-hover-color)
 }
