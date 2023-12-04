@@ -21,8 +21,8 @@ function Signup() {
     const [confirmPasswordError, setConfirmPassword] = useState('');
     const handleConfirmPasswordInput = (event) => {
         const val = event.target.value;
-        if (val !== '') {
-            if (val != document.querySelector('input[name="password"]').value) {
+        if (val !== '1') {
+            if (val !== document.getElementById('password').value) {
                 setConfirmPassword('Passwords do not match');
             } else {
                 setConfirmPassword('');
@@ -32,27 +32,21 @@ function Signup() {
         }
 
     }
-
     //Form submit
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let name = document.getElementById('name').value;
+        let username = document.getElementById('name').value;
         let email = document.getElementById('email').value;
         let password = document.getElementById('password').value;
         const data = {
-            name,
+            username,
             email,
             password,
         };
-        // const data = {
-        //     name: 'Yokesh2',
-        //     email: 'yokesh@gmail.com',
-        //     password: '12345',
-        // };
         console.log("Array"+data);
         console.log("JSON"+JSON.stringify(data))
         try {
-            const response = await fetch('http://localhost:8082/Demo/SignUpServlet', {
+            const response = await fetch('http://localhost:9090/user/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -71,6 +65,7 @@ function Signup() {
         } catch (error) {
             // Handle network errors
             alert(error);
+
         }
     };
     return (
