@@ -50,25 +50,25 @@ function Navbar() {
                             <a href=''><i className="fa-regular fa-book-heart"></i>My Donation</a>
                         </li>
                         <li>
-                            <a href=''><i className="fa-regular fa-book-heart"></i>My Beneficiary</a>
+                            <a href=''><i className="fa-regular fa-shield-heart"></i>My Beneficiary</a>
                         </li>
                         <li>
-                            <a href=''><i className="fa-regular fa-book-heart"></i>Chat</a>
+                            <a href=''><i className="fa-regular fa-comment-dots"></i>Chat</a>
                         </li>
                         <li>
-                            <a href=''><i className="fa-regular fa-book-heart"></i>Favorite</a>
+                            <a href=''><i className="fa-regular fa-heart"></i>Favorite</a>
                         </li>
                         <li>
-                            <a href=''><i className="fa-regular fa-book-heart"></i>My Profile</a>
+                            <a href=''><i className="fa-regular fa-user"></i>My Profile</a>
                         </li>
                         <li>
-                            <a href=''><i className="fa-regular fa-book-heart"></i>About Us</a>
+                            <a href=''><i className="fa-regular fa-address-card"></i>About Us</a>
                         </li>
                         <li>
-                            <a href=''><i className="fa-regular fa-book-heart"></i>Contact Us</a>
+                            <a href=''><i className="fa-regular fa-mobile"></i>Contact Us</a>
                         </li>
                         <li>
-                            <a href=''><i className="fa-regular fa-book-heart"></i>Notification</a>
+                            <a href=''><i className="fa-regular fa-bell"></i>Notification</a>
                         </li>
                         <li>
                             <a href=''><i className="fa-regular fa-arrow-right-from-bracket"></i>Logout</a>
@@ -110,44 +110,44 @@ function Navbar() {
                                 <li className='search-div l-li'>
                                     <a href=''>
                                         <label className='g-lable-1'><i className="fa-regular fa-magnifying-glass g-input-icon-1"></i></label>
-                                        <input type='search' className='search g-input-field-1' placeholder='Search for..' />
+                                        <input type='search' className='search g-input-field-1' placeholder='Search for donations' />
                                     </a>
                                 </li>
                                 <li className='l-li'>
-                                    <a href="" className='l-s-color'><i className="fa-solid fa-house"></i> Home</a>
+                                    <a href="" className='l-s-color'><i className="fa-regular fa-house"></i> Home</a>
                                 </li>
                                 <li className='l-li'>
                                     <a href='' className='l-s-color'><i className="fa-regular fa-book-heart"></i> My Donation</a>
                                 </li>
                                 <li className='l-li'>
-                                    <a href='' className='l-s-color'><i className="fa-regular fa-book-heart"></i> My Beneficiary</a>
+                                    <a href='' className='l-s-color'><i className="fa-regular fa-shield-heart"></i> My Beneficiary</a>
                                 </li>
                                 <li className='l-s-color nav-more l-li' onClick={toggleMore}>
                                     <span>
-                                    <i className="fa-regular fa-book-heart"></i> More
+                                    More <i className="fa-solid fa-caret-down"></i>
                                     </span>
                                     <ul className={isOpen2?'nav-more-open':'more-ul'}>
                                         <li>
-                                            <a href=''><i className="fa-regular fa-book-heart"></i>About Us</a>
+                                            <a href='' className='l-s-color'><i className="fa-regular fa-address-card"></i>About Us</a>
                                         </li>
                                         <li>
-                                            <a href=''><i className="fa-regular fa-book-heart"></i>Contact Us</a>
+                                            <a href='' className='l-s-color'><i className="fa-regular fa-mobile"></i>Contact Us</a>
                                         </li>
                                         <li>
-                                            <a href=''><i className="fa-regular fa-arrow-right-from-bracket"></i>Logout</a>
+                                            <a href='' className='l-s-color'><i className="fa-regular fa-arrow-right-from-bracket"></i>Logout</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className='l-li'>
                                     <a href='' className='l-donate-btn'><i className="fa-light fa-square-plus"></i> Donate</a>
                                 </li>
-                                <li className='l-li'><a href="" className='l-f-color'><i className="fa-light fa-heart"></i></a></li>
+                                <li className='l-li l-icon'><a href="" className='l-f-color'><i className="fa-solid fa-heart"></i></a></li>
                                 <li className='l-chat-div l-li'>
                                     <span className='chat-count'>2</span>
-                                    <a href="" className='l-f-color'><i className="fa-light fa-comment-dots"></i></a>
+                                    <a href="" className='l-f-color'><i className="fa-regular fa-comment-dots"></i></a>
                                 </li>
-                                <li className='l-li'><a href='' className='l-f-color'><i className="fa-solid fa-bell"></i></a></li>
-                                <li className='l-li'><a href='' className='l-f-color'><i className="fa-light fa-user"></i></a></li>
+                                <li className='l-li l-icon'><a href='' className='l-f-color'><i className="fa-solid fa-bell"></i></a></li>
+                                <li className='l-li l-icon'><a href='' className='l-f-color'><i className="fa-solid fa-user"></i></a></li>
                             </ul>
                         </li>
                     </ul>
