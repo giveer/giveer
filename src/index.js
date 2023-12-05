@@ -20,7 +20,7 @@ import Navbar from './pages/navbar/Navbar';
 
 export default function Main() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
           <Route path="/" element={<Comingsoon />} />
           <Route path="/index" element={<Navbar />} />
