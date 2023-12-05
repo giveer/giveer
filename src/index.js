@@ -9,6 +9,7 @@ import Testing from './pages/testing/Testing';
 import Forgot from './pages/forgot password/Forgot';
 import NewPassword from './pages/forgot password/NewPassword';
 import Verification from './pages/forgot password/Verification';
+import Navbar from './pages/navbar/Navbar';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -22,6 +23,7 @@ export default function Main() {
     <BrowserRouter>
       <Routes>
           <Route path="/" element={<Comingsoon />} />
+          <Route path="/index" element={<Navbar />} />
           <Route path="signin" element={<Signin />} />
           <Route path="signup" element={<Signup />} /> 
           <Route path="testing" element={<Testing/>} />

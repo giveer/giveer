@@ -11,6 +11,7 @@ div {
 
 :root {
     --first-color: #F43397;
+    --second-color: #551a8b;
     --third-color: #777a7e;
 
     --first-hover-color: #d8006c;
@@ -40,8 +41,11 @@ div {
 
 body {
     font-family: giveer-regular;
+    /* background-color: #fcf7fa; */
 }
-
+a{
+    text-decoration: none;
+}
 .center-div {
     display: flex;
     height: 100vh;
