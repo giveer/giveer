@@ -2,8 +2,7 @@ import './Signup.css';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 // import '../validation/validation.js';
 import React, { useState } from 'react';
-import { isValidEmail, isValidPassword } from '../validation/validation'
-
+import { isValidEmail, isValidPassword, isValidConfirmPassword } from '../validation/validation'
 
 function Signup() {
     const [mailError, setError] = useState('');
@@ -21,16 +20,7 @@ function Signup() {
     const [confirmPasswordError, setConfirmPassword] = useState('');
     const handleConfirmPasswordInput = (event) => {
         const val = event.target.value;
-        if (val !== '') {
-            if (val != document.querySelector('input[name="password"]').value) {
-                setConfirmPassword('Passwords do not match');
-            } else {
-                setConfirmPassword('');
-            }
-        } else {
-            setConfirmPassword('Confirmation is required');
-        }
-
+        setConfirmPassword(isValidConfirmPassword(val, "ConfirmPassword"));
     }
 
     //Form submit

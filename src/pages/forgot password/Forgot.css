@@ -1,24 +1,17 @@
-@import url(../../Style.css);
+@import "../../Style.css";
 
-p{
+.giveer-p{
     font-family: giveer-regular;
     color: var(--third-color);
     text-align: center;
     margin: 0 15px;
-}
-h4{
-    font-family: giveer-medium;
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 20px;
-    color: var(--first-color);
 }
 .bts{
     text-align: center;
     text-decoration: none;
     color: var(--third-color);
 }
-h5{
+.g-h-5{
     text-align: center;
     padding: 0 10%;
     margin: 0px;
@@ -36,4 +29,54 @@ h5{
 }
 hr{
     width: 50%;
+}
+.forgot{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.forgot-1{
+    display: none;
+}
+
+/* Tab view style */
+@media only screen and (min-width: 426px){
+    .forgot {
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2%;
+        border-radius: 5px;
+    }
+    
+    .forgot-1 {
+        display: block;
+        width: 40vw;
+    }
+    
+    .forgot-2 {
+        
+        width: 40vw;
+    }
+}
+
+/* Laptop view style */
+@media only screen and (min-width: 767px){
+    .forgot {
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2%;
+        border-radius: 5px;
+    }
+    
+    .forgot-1 {
+        display: block;
+        width: 25vw;
+    }
+    
+    .forgot-2 {
+        width: 25vw;
+        
+    }
 }

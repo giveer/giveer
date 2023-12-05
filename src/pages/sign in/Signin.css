@@ -1,6 +1,6 @@
 @import "../../Style.css";
 
-.g-signup-p{
+.g-signin-p{
     font-family: giveer-regular;
     color: var(--third-color);
     text-align: center;
@@ -23,4 +23,47 @@ hr{
 }
 .for-p{
     margin-top: 20px;
+}
+.signin-2{
+    display: none;
+}
+
+/* Tab view style */
+@media only screen and (min-width: 426px){
+    .signin {
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2%;
+        border-radius: 5px;
+    }
+    
+    .signin-1 {
+        width: 40vw;
+    }
+    
+    .signin-2 {
+        display: block;
+        width: 40vw;
+    }
+}
+
+/* Laptop view style */
+@media only screen and (min-width: 767px){
+    .signin {
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2%;
+        border-radius: 5px;
+    }
+    
+    .signin-1 {
+        width: 25vw;
+    }
+    
+    .signin-2 {
+        width: 25vw;
+        display: block;
+    }
 }

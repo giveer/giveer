@@ -10,7 +10,7 @@
     display: none;
 }
 /* Tab view style */
-@media only screen and (min-width:424px){
+@media only screen and (min-width:426px){
     .signup {
         display: flex;
         align-items: center;
