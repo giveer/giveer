@@ -1,0 +1,59 @@
+@import '../../Style.css';
+
+@font-face {
+    font-family: giveer-bold;
+    src: url(../../assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProBlackRegular.woff);
+}
+
+@font-face {
+    font-family: giveer-lite;
+    src: url(../../assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProMediumRegular.woff);
+}
+
+:root {
+    --first-color: #F43397;
+    --second-color: #FF006E;
+}
+
+.coming_soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: bg 2s infinite ease-in-out;
+}
+
+.coming_soon h1 {
+    font-family: giveer-bold;
+    font-size: 4rem;
+    color: var(--first-color);
+    margin: 0;
+    animation: text 2s infinite ease-in-out;
+}
+
+.coming_soon p {
+    font-family: giveer-lite;
+    color: #1B1D1E;
+    font-size: 1.2rem;
+}
+
+@keyframes bg {
+    40% {
+        background-color: var(--first-color);
+    }
+
+    80% {
+        background-color: white;
+    }
+}
+
+@keyframes text {
+    40% {
+        color: white;
+    }
+
+    80% {
+        color: var(--first-color);
+    }
+}

@@ -1,0 +1,128 @@
+/* Resetting default margin and padding for all elements */
+body,
+html,
+h1,
+p,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: #F43397;
+    --second-color: #551a8b;
+    --third-color: #777a7e;
+
+    --first-hover-color: #d8006c;
+    --bg-lite-gray: #edeef0;
+
+}
+
+@font-face {
+    font-family: giveer-liter;
+    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProLightRegular.woff);
+}
+
+@font-face {
+    font-family: giveer-medium;
+    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProMediumRegular.woff);
+}
+
+@font-face {
+    font-family: giveer-bold;
+    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProBold.woff);
+}
+
+@font-face {
+    font-family: giveer-regular;
+    src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProRegular.woff);
+}
+
+body {
+    font-family: giveer-regular;
+    /* background-color: #fcf7fa; */
+}
+a{
+    text-decoration: none;
+}
+.center-div {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Heading Style*/
+.g-h-4 {
+    font-family: giveer-medium;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+    color: var(--first-color);
+}
+
+/*Input Field Style*/
+.g-input-field-div-1 {
+    margin: 7%;
+    position: relative;
+}
+
+.g-input-field-1 {
+    font-family: giveer-regular;
+    width: 100%;
+    padding: 8px 8px 8px 30px;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--bg-lite-gray);
+    border: 2px solid var(--bg-lite-gray);
+    color: var(--third-color);
+    box-sizing: border-box;
+    outline: none;
+}
+
+.g-input-field-1:focus {
+    border: 2px solid var(--first-color);
+}
+
+.g-input-field-1::placeholder {
+    font-family: giveer-regular;
+}
+
+.g-input-icon-1 {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    color: var(--third-color);
+}
+
+.g-lable-1 {
+    position: relative;
+}
+
+/*Input Error*/
+.input-error{
+    position: absolute;
+    left: 0;
+    top: 105%;
+    font-size: 0.8rem;
+    color: red;
+}
+
+/*Button Style*/
+.g-btn-1 {
+    font-family: 'giveer-medium';
+    background-color: var(--first-color);
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 3px;
+    transition: background .5s;
+    cursor: pointer;
+}
+
+.g-btn-1:hover {
+    background-color: var(--first-hover-color)
+}
