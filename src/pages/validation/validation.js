@@ -25,7 +25,7 @@ export const isValidPassword = (val, fieldName) => {
 //Confirm password checking function
 export const isValidConfirmPassword = (val, fieldname) => {
     if (val !== '') {
-        if (val != document.querySelector('input[name="password"]').value) {
+        if (val !== document.querySelector('input[name="password"]').value) {
             return 'Passwords do not match';
         } else {
             return '';
