@@ -17,7 +17,7 @@ import Otp_email from './pages/otp sign in/Otp_email';
 //     <Comingsoon />
 //   </React.StrictMode>
 // );
-
+//Routes
 export default function Main() {
   return (
     <BrowserRouter>
