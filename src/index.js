@@ -15,6 +15,7 @@ import NewPassword from './pages/forgot password/NewPassword';
 import Navbar from './pages/navbar/Navbar';
 import Otp_email from './pages/otp sign in/Otp_email';
 import Home from './pages/Home/Home';
+import Otp_verify from './pages/otp sign in/Otp_verify';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -22,7 +23,7 @@ import Home from './pages/Home/Home';
 //     <Comingsoon />
 //   </React.StrictMode>
 // );
-
+//Routes
 export default function Main() {
   return (
     <Router>
@@ -39,6 +40,7 @@ export default function Main() {
             <Route path="forgot" element={<Forgot/>} />
             <Route path="newpassword" element={<NewPassword/>} />
             <Route path="otpemail" element={<Otp_email/>} />
+            <Route path="otpverify" element={<Otp_verify/>} />
         </Routes>
       </div>
     </Router>

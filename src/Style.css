@@ -1,9 +1,5 @@
 /* Resetting default margin and padding for all elements */
-body,
-html,
-h1,
-p,
-div {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -144,5 +140,5 @@ a{
 }
 
 .main{
-    margin-top: 55px;
+    margin-top: 52px;
 }

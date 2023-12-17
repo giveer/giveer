@@ -1,2 +1,11 @@
 @import url(../../Style.css);
 
+.tagline{
+    font-size: 1.3rem;
+    font-family: giveer-regular;
+    text-align: center;
+    padding: 20px;
+}
+.tagline span{
+    color: var(--first-color);
+}
