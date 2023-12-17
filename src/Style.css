@@ -1,9 +1,5 @@
 /* Resetting default margin and padding for all elements */
-body,
-html,
-h1,
-p,
-div {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,23 +20,39 @@ div {
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProLightRegular.woff);
 }
 
-@font-face {
+/* @font-face {
     font-family: giveer-medium;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProMediumRegular.woff);
-}
+} */
 
 @font-face {
     font-family: giveer-bold;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProBold.woff);
 }
 
-@font-face {
+/* @font-face {
     font-family: giveer-regular;
     src: url(./assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProRegular.woff);
+} */
+@font-face {
+    font-family: giveer-new1;
+    src: url(./assets/fonts/Web\ Fonts/9d23cda2fd2a195a8467e0967debd4d3.woff);
+}
+@font-face {
+    font-family: giveer-new2;
+    src: url(./assets/fonts/Web\ Fonts/9d23cda2fd2a195a8467e0967debd4d3.woff2);
+}
+@font-face {
+    font-family: giveer-medium;
+    src: url(./assets/fonts/cera\ round/065b323ec2a576d066ad0d9d395d20a0.woff);
+}
+@font-face {
+    font-family: giveer-regular;
+    src: url(./assets/fonts/cera\ round/d642a55bac4df71e7c87a9394df80363.woff);
 }
 
 body {
-    font-family: giveer-regular;
+    font-family: 'giveer-regular', sans-serif;
     /* background-color: #fcf7fa; */
 }
 a{
@@ -125,4 +137,8 @@ a{
 
 .g-btn-1:hover {
     background-color: var(--first-hover-color)
+}
+
+.main{
+    margin-top: 52px;
 }

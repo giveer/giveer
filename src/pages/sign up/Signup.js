@@ -1,7 +1,7 @@
 import './Signup.css';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 // import '../validation/validation.js';
-import React, { useState } from 'react';
+import React, { useState, useReducer} from 'react';
 import { isValidEmail, isValidPassword, isValidConfirmPassword } from '../validation/validation'
 
 function Signup() {
@@ -26,6 +26,33 @@ function Signup() {
         setConfirmPassword(isValidConfirmPassword(val, "ConfirmPassword"));
 
     }
+    //Password Hide & Show
+    const initialState = { //False -> Hide : True -> Show
+        passwordState: false,
+        cpasswordState: false
+    }
+    const reducer = (state, action) => {
+        switch(action.type){
+            case 'PASSWORD':
+                if(!state.passwordState){
+                    document.getElementById('password').type = 'text';
+                }else{
+                    document.getElementById('password').type = 'password';
+                }
+                return {...state, passwordState: !state.passwordState};
+            case 'CPASSWORD':
+                if(!state.cpasswordState){
+                    document.getElementById('c-password').type = 'text';
+                }else{
+                    document.getElementById('c-password').type = 'password';
+                }
+                return {...state, cpasswordState: !state.cpasswordState};
+            default:
+                return state
+        }
+    }
+    const [state, dispatch] = useReducer(reducer, initialState);
+    
     //Form submit
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -75,17 +102,19 @@ function Signup() {
                         </div>
                         <div className="g-input-field-div-1">
                             <label className='g-lable-1'><i class="fa-regular fa-envelope g-input-icon-1"></i></label>
-                            <input type="text" name="email" id="email" className="g-input-field-1" placeholder="Email" onChange={handleEmailInput} />
+                            <input type="text" name="email" id="email" className="g-input-field-1 email" placeholder="Email" onChange={handleEmailInput} />
                             {mailError && <span className='input-error' id="email-error">{mailError}</span>}
                         </div>
                         <div className="g-input-field-div-1">
                             <label className='g-lable-1'><i class="fa-regular fa-lock g-input-icon-1"></i></label>
                             <input type="password" name="password" id="password" className="g-input-field-1" placeholder="Password" onChange={handlePasswordInput} />
+                            <span className='password-eye' onClick={()=> dispatch({type: 'PASSWORD'})}><i className={state.passwordState?'fa-regular fa-eye-slash':'fa-regular fa-eye'}></i></span>
                             {passwordError && <span className='input-error' id="password-error">{passwordError}</span>}
                         </div>
                         <div className="g-input-field-div-1">
                             <label className='g-lable-1'><i class="fa-regular fa-lock-keyhole g-input-icon-1"></i></label>
                             <input type="password" name="c-password" id="c-password" className="g-input-field-1" placeholder="Confirm Password" onChange={handleConfirmPasswordInput} />
+                            <span className='password-eye' onClick={()=> dispatch({type: 'CPASSWORD'})}><i className={state.cpasswordState?'fa-regular fa-eye-slash':'fa-regular fa-eye'}></i></span>
                             {confirmPasswordError && <span className='input-error' id="confirm-password-error">{confirmPasswordError}</span>}
                         </div>
                         <div className="g-input-field-div-1">

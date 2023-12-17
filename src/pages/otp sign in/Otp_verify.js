@@ -2,9 +2,9 @@ import './Otp_verify.css';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 
 function Otp_verify() {
-
-    const inputs = document.querySelectorAll("input"),
-        button = document.querySelector("button");
+    // const inputs = document.getElementsByClassName("number");
+    const inputs = document.querySelectorAll("input");
+    const button = document.querySelector("button");
 
     // iterate over all inputs
     inputs.forEach((input, index1) => {
@@ -53,6 +53,7 @@ function Otp_verify() {
 
     //focus the first input which index is 0 on window load
     window.addEventListener("load", () => inputs[0].focus());
+    console.log("length"+inputs.length);
 
     return (
         <div className="center-div">
