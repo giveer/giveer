@@ -43,7 +43,7 @@ function Otp_verify() {
             }
             //if the fourth input( which index number is 3) is not empty and has not disable attribute then
             //add active class if not then remove the active class.
-            if (!inputs[3].disabled && inputs[3].value !== "") {
+            if (!inputs[5].disabled && inputs[5].value !== "") {
                 button.classList.add("active");
                 return;
             }
