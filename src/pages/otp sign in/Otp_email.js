@@ -8,16 +8,18 @@ function Otp_email() {
                 <div className='otpmail-1'>
                     <h4 className='g-h-4'>OTP Signin</h4>
                     <div><p className='giveer-p'>Enter the Registered Email Address</p></div>
-                    <div className="g-input-field-div-1">
-                        <label className='g-lable-1'><i class="fa-regular fa-envelope g-input-icon-1"></i></label>
-                        <input type="text" name="email" className="g-input-field-1" placeholder="Email" />
-                    </div>
-                    <div className='bts'>
-                        <a className='bts' href="signin">Back to Signin</a>
-                    </div>
-                    <div className="g-input-field-div-1">
-                        <button type="button" className="g-btn-1">Send</button>
-                    </div>
+                    <form action="./Otp_verify.js">
+                        <div className="g-input-field-div-1">
+                            <label className='g-lable-1'><i class="fa-regular fa-envelope g-input-icon-1"></i></label>
+                            <input type="text" name="email" className="g-input-field-1" placeholder="Email" />
+                        </div>
+                        <div className='bts'>
+                            <a className='bts' href="signin">Back to Signin</a>
+                        </div>
+                        <div className="g-input-field-div-1">
+                            <button type="button" className="g-btn-1">Send</button>
+                        </div>
+                    </form>
                 </div>
                 <div className='otpmail-2'>
                     <DonationIcon />
@@ -26,4 +28,5 @@ function Otp_email() {
         </div >
     );
 }
+
 export default Otp_email
