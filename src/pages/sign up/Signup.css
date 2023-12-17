@@ -48,3 +48,10 @@
         display: block;
     }
 }
+
+.password-eye{
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    color: var(--third-color);
+}
