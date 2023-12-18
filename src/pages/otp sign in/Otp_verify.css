@@ -8,7 +8,7 @@ form .input-field {
     justify-content: space-evenly;
 }
 
-.input-field .number {
+.input-field .num {
     height: 40px;
     width: 37px;
     border-radius: 6px;
@@ -19,7 +19,7 @@ form .input-field {
     margin: 2.5px;
 }
 
-.number:focus {
+.num:focus {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 
