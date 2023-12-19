@@ -1,10 +1,9 @@
 import './Otp_verify.css';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
-import { useEffect } from 'react';
 
 function Otp_verify() {
     // const inputs = document.getElementsByClassName("number");
-    const inputs = document.querySelectorAll(".number");
+    const inputs = document.querySelectorAll(".num");
     const button = document.querySelector("button");
 
     // iterate over all inputs
@@ -15,9 +14,9 @@ function Otp_verify() {
             // This code gets the current input element and stores it in the currentInput variable
             // This code gets the next sibling element of the current input element and stores it in the nextInput variable
             // This code gets the previous sibling element of the current input element and stores it in the prevInput variable
-            const currentInput = input,
-                nextInput = input.nextElementSibling,
-                prevInput = input.previousElementSibling;
+            const currentInput = input;
+            const nextInput = input.nextElementSibling;
+            const prevInput = input.previousElementSibling;
 
             // if the value has more than one character then clear it
             if (currentInput.value.length > 1) {
@@ -44,9 +43,9 @@ function Otp_verify() {
                     }
                 });
             }
-            //if the fourth input( which index number is 3) is not empty and has not disable attribute then
+            //if the sixth input( which index number is 5) is not empty and has not disable attribute then
             //add active class if not then remove the active class.
-            if (!inputs[3].disabled && inputs[3].value !== "") {
+            if (!inputs[5].disabled && inputs[5].value !== "") {
                 button.classList.add("active");
                 return;
             }
@@ -58,25 +57,24 @@ function Otp_verify() {
         });
     });
 
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     document.querySelectorAll(".number")[0].value=0;
-    // });
-     
-    
-    
+
+    //focus the first input which index is 0 on window load
+    document.addEventListener("load", () => inputs[0].focus());
+    console.log("length "+inputs.length);
+
     return (
         <div className="center-div">
             <div className='container'>
                 <div className="container-1">
                     <h4 className='g-h-4'>Enter OTP Code</h4>
                     <form action="">
-                        <div class="input-field">
-                            <input className="number" type="number" />
-                            <input className="number" type="number" disabled />
-                            <input className="number" type="number" disabled />
-                            <input className="number" type="number" disabled />
-                            <input className="number" type="number" disabled />
-                            <input className="number" type="number" disabled />
+                        <div className="input-field">
+                            <input className="num" type="number" />
+                            <input className="num" type="number" disabled />
+                            <input className="num" type="number" disabled />
+                            <input className="num" type="number" disabled />
+                            <input className="num" type="number" disabled />
+                            <input className="num" type="number" disabled />
                         </div>
                         <div className="g-input-field-div-1">
                             <button type="submit" className='g-btn-1'>Verify OTP</button>
