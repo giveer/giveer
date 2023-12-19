@@ -1,14 +1,17 @@
 import './Otp_verify.css';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
+import { useEffect } from 'react';
 
 function Otp_verify() {
     // const inputs = document.getElementsByClassName("number");
-    const inputs = document.querySelectorAll("input");
+    const inputs = document.querySelectorAll(".number");
     const button = document.querySelector("button");
 
     // iterate over all inputs
     inputs.forEach((input, index1) => {
         input.addEventListener("keyup", (e) => {
+            console.log(input.value);
+            
             // This code gets the current input element and stores it in the currentInput variable
             // This code gets the next sibling element of the current input element and stores it in the nextInput variable
             // This code gets the previous sibling element of the current input element and stores it in the prevInput variable
@@ -47,14 +50,20 @@ function Otp_verify() {
                 button.classList.add("active");
                 return;
             }
-            button.classList.remove("active");
+            document.addEventListener('DOMContentLoaded', function() {
+                // Your code here
+                document.querySelectorAll(".number")[0].focus();
+            });
+            
         });
     });
 
-    //focus the first input which index is 0 on window load
-    window.addEventListener("load", () => inputs[0].focus());
-    console.log("length"+inputs.length);
-
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     document.querySelectorAll(".number")[0].value=0;
+    // });
+     
+    
+    
     return (
         <div className="center-div">
             <div className='container'>
