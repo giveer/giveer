@@ -9,6 +9,8 @@ function Otp_verify() {
     // iterate over all inputs
     inputs.forEach((input, index1) => {
         input.addEventListener("keyup", (e) => {
+            console.log(input.value);
+            
             // This code gets the current input element and stores it in the currentInput variable
             // This code gets the next sibling element of the current input element and stores it in the nextInput variable
             // This code gets the previous sibling element of the current input element and stores it in the prevInput variable
@@ -47,9 +49,14 @@ function Otp_verify() {
                 button.classList.add("active");
                 return;
             }
-            button.classList.remove("active");
+            document.addEventListener('DOMContentLoaded', function() {
+                // Your code here
+                document.querySelectorAll(".number")[0].focus();
+            });
+            
         });
     });
+
 
     //focus the first input which index is 0 on window load
     document.addEventListener("load", () => inputs[0].focus());
