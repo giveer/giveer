@@ -1,6 +1,6 @@
 import './Otp_verify.css';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
-import { useRef, useEffect } from 'react';
+import {useEffect} from 'react';
 
 function Otp_verify2() {
     // Using useEffect because directly using focus will run before component rendering, so it will show an error, so using useEffect will run below code after component rendering.
