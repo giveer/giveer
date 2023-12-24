@@ -3,47 +3,48 @@ import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 import { useRef, useEffect } from 'react';
 
 function Otp_verify2() {
-    //document.getElementsByClassName('otp-input')[0].facus();
-
-
-  useEffect(() => {
-    document.getElementsByClassName('otp-input')[0].focus(); // Focus after component mounts
-  }, []);
+    // Using useEffect because directly using focus will run before component rendering, so it will show an error, so using useEffect will run below code after component rendering.
+    // onload, it will focus the first input box.
+    useEffect(() => {
+        document.getElementsByClassName('otp-input')[0].focus(); // Focus after component mounts
+    }, []);
+    // Every time the user types in input, this function will be called.
     const otpFunction = (value, keyCode) => {
-        let prevInput = document.getElementsByClassName(' otp-input')[value-2];
-        let currentInput = document.getElementsByClassName('otp-input')[value-1];
+        let prevInput = document.getElementsByClassName(' otp-input')[value - 2];
+        let currentInput = document.getElementsByClassName('otp-input')[value - 1];
         let nextInput = document.getElementsByClassName('otp-input')[value];
         let maxLenght = document.getElementById('otp-max-length').value;
-        if(keyCode == 8){
-            if(value==1){
-                currentInput.disabled=false;
+        // When the user clicks Backspace, this if conditin is executed.
+        if (keyCode == 8) { // Backspace KeyCode is 8
+            // If the user enters the first input, the focus does not go to the previous input. Because there is no previous input.
+            if (value == 1) {
+                currentInput.disabled = false;
                 currentInput.focus();
-            }else{
+            }
+            else {
                 currentInput.value = '';
                 currentInput.disabled = true;
                 prevInput.disabled = false;
                 prevInput.focus();
             }
-        }else if (!isNaN(currentInput.value) && currentInput.value!='' && value<=maxLenght) {
-            console.log("else if");
-            if(currentInput.value.length==1 && value<maxLenght){
-                console.log("else if if");
-                currentInput.disabled = true;
-                nextInput.disabled = false;
-                nextInput.focus();
-            }
-        }else {
-                currentInput.value='';
+        }
+        // We need to check! isNaN(currentInput.value) -> This is number or not && currentInput.value != '' -> value is not empty && currentInput length must be 1 && value is less than max input field number.
+        else if (!isNaN(currentInput.value) && currentInput.value != '' && currentInput.value.length == 1 && value < maxLenght) {
+            currentInput.disabled = true;
+            nextInput.disabled = false;
+            nextInput.focus();
         }
     }
     const handleKeyUp = (event, value) => {
+        //Get ketCode
         const keyCode = event.keyCode || event.which;
         otpFunction(value, keyCode);
     };
+    // This function will allow only one number per input.
     const handleChange = (event) => {
         const newValue = event.target.value.slice(0, 1); // Limit to 1 character
-        event.target.value=newValue;
-      };
+        event.target.value = newValue;
+    };
     return (
         <div className="center-div">
             <div className='container'>
@@ -57,7 +58,7 @@ function Otp_verify2() {
                             <input className="num otp-input" type="number" onKeyUp={(event) => handleKeyUp(event, 4)} onChange={handleChange} disabled />
                             <input className="num otp-input" type="number" onKeyUp={(event) => handleKeyUp(event, 5)} onChange={handleChange} disabled />
                             <input className="num otp-input" type="number" onKeyUp={(event) => handleKeyUp(event, 6)} onChange={handleChange} disabled />
-                            <input id='otp-max-length' type='hidden' value={6}/>
+                            <input id='otp-max-length' type='hidden' value={6} />
                         </div>
                         <div className="g-input-field-div-1">
                             <button type="submit" className='g-btn-1'>Verify OTP</button>
