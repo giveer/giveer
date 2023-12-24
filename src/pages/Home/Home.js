@@ -1,4 +1,3 @@
-// import '/Home.css';
 import './Home.css';
 import image1 from '../../assets/slider/Slide_1.jpg'
 import image2 from '../../assets/slider/Slide_2.jpg'
