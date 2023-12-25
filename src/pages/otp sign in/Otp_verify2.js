@@ -36,7 +36,7 @@ function Otp_verify2() {
         }
     }
     const handleKeyUp = (event, value) => {
-        //Get ketCode
+        //Get keyCode
         const keyCode = event.keyCode || event.which;
         otpFunction(value, keyCode);
     };
@@ -45,12 +45,24 @@ function Otp_verify2() {
         const newValue = event.target.value.slice(0, 1); // Limit to 1 character
         event.target.value = newValue;
     };
+    const validate = () => {
+        let otp, otpstr='';
+        for(let i=0;i<(document.getElementById('otp-max-length').value)-1;i++){
+            if(document.getElementsByClassName('otp-input')[i]!=''){
+                otpstr += document.getElementsByClassName('otp-input')[i];
+                otp = parseInt(otpstr);
+                console.log('OTP is ', otp);
+            }else{
+                document.getElementsByClassName('otp-input')[i].style.borderBottom = '2px solid red';
+            }
+        }
+    }
     return (
         <div className="center-div">
             <div className='container'>
                 <div className="container-1">
                     <h4 className='g-h-4'>Enter OTP Code</h4>
-                    <form action="">
+                    <form>
                         <div className="input-field">
                             <input className="num otp-input" type="number" onKeyUp={(event) => handleKeyUp(event, 1)} onChange={handleChange} />
                             <input className="num otp-input" type="number" onKeyUp={(event) => handleKeyUp(event, 2)} onChange={handleChange} disabled />
@@ -61,7 +73,7 @@ function Otp_verify2() {
                             <input id='otp-max-length' type='hidden' value={6} />
                         </div>
                         <div className="g-input-field-div-1">
-                            <button type="submit" className='g-btn-1'>Verify OTP</button>
+                            <button type="submit" className='g-btn-1' onClick={validate}>Verify OTP</button>
                         </div>
                     </form>
                     <div className='bts'>
