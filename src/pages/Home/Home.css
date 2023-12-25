@@ -5,6 +5,7 @@
     font-family: giveer-regular;
     text-align: center;
     padding: 20px;
+    font-weight: bold;
 }
 .tagline span{
     color: var(--first-color);
