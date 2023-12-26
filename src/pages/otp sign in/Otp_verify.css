@@ -18,6 +18,16 @@ form .input-field {
     border: 1px solid #cfcfcf;
     margin: 2.5px;
 }
+.api-call{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1em;
+    top: 450px;
+    background-color: #e0dddd;
+    padding: 7px;
+    border-radius: 5px;
+    display: none;
+}
 
 .num:focus {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);

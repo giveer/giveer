@@ -45,17 +45,21 @@ function Otp_verify2() {
         const newValue = event.target.value.slice(0, 1); // Limit to 1 character
         event.target.value = newValue;
     };
-    const validate = () => {
+    const validate = (event) => {
+        event.preventDefault();
         let otp, otpstr='';
-        for(let i=0;i<(document.getElementById('otp-max-length').value)-1;i++){
-            if(document.getElementsByClassName('otp-input')[i]!=''){
-                otpstr += document.getElementsByClassName('otp-input')[i];
-                otp = parseInt(otpstr);
-                console.log('OTP is ', otp);
+        for(let i=0;i<(document.getElementById('otp-max-length').value);i++){
+            if(document.getElementsByClassName('otp-input')[i].value!=''){
+                otpstr += document.getElementsByClassName('otp-input')[i].value;
             }else{
                 document.getElementsByClassName('otp-input')[i].style.borderBottom = '2px solid red';
             }
         }
+        otp = parseInt(otpstr);
+        console.log('OTP is ', otp);
+        // if(otpstr.length==document.getElementById('otp-max-length').value){
+        //     document.getElementsByClassName('api-call').style.display = 'block';
+        // }
     }
     return (
         <div className="center-div">
@@ -83,6 +87,9 @@ function Otp_verify2() {
                 <div className='container-2'>
                     <DonationIcon />
                 </div>
+            </div>
+            <div className='api-call'>
+                API Calling...
             </div>
         </div>
     );
