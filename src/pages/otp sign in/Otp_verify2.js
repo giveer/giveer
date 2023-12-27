@@ -57,9 +57,9 @@ function Otp_verify2() {
         }
         otp = parseInt(otpstr);
         console.log('OTP is ', otp);
-        // if(otpstr.length==document.getElementById('otp-max-length').value){
-        //     document.getElementsByClassName('api-call').style.display = 'block';
-        // }
+        if(otpstr.length==document.getElementById('otp-max-length').value){
+            //API call...
+        }
     }
     return (
         <div className="center-div">
@@ -87,9 +87,6 @@ function Otp_verify2() {
                 <div className='container-2'>
                     <DonationIcon />
                 </div>
-            </div>
-            <div className='api-call'>
-                API Calling...
             </div>
         </div>
     );
