@@ -1,0 +1,139 @@
+@import '../../Style.css';
+
+.main{
+    font-size: 0.8rem;
+}
+.profile-svg{
+    background-color: #5a5a5a;
+    height: 25vh;
+    width: 100vw;
+    border-radius: 7.5px;
+    display: flex;
+}
+/* .profile-div{
+    background-color: rgb(226, 226, 226);
+    border: 1px solid green;
+    width: 50vw;
+}
+.profile-span{
+    width: 15rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: #e4e2e2;
+    border: 2px solid skyblue;
+}
+.profile-icon-image{
+    position: absolute;
+    font-size: 50px;
+    color: rgb(161, 190, 181);
+}
+.user-name{
+    position: absolute;
+    padding-left: 7rem;
+    font-weight: bold;
+    color: grey;
+} */
+
+.profile-span{
+    /* display: block; */
+    border: 2px solid rgb(127, 228, 214);
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    /* position: relative; */
+}
+/* .profile-span::before{
+    content: '';
+    position: absolute;
+    width: 4.75rem;
+    height: 4.75rem;
+    border-radius: 50%;
+    background-color: rgb(105, 78, 78);
+    z-index: -1;
+} */
+.profile-icon-image{
+    font-size: 50px;
+    color: rgb(161, 190, 181);
+}
+.profile-div1{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 1.5rem;
+}
+.user-name, .user-email, .edit-profile{
+    display: block;
+    margin: 5px 0 0 0;
+}
+.profile-div2{
+    display: flex;
+    margin: 0 0 0 .7rem;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+}
+.edit-profile{
+    display: flex;
+    justify-content: space-between;
+    width: 85px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.tri-dbf{
+    display: flex;
+    justify-content: space-evenly;
+}
+.donate, .benefit, .fav{
+    margin: 5px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 7px;
+}
+.donate-icon, .gift-icon, .favourite-icon{
+    font-size: 30px;
+    color:  var(--first-color);
+    padding: 0 0 7px 0;
+}
+.profile-menu{
+    margin: 0 20px 52px;
+    text-decoration: none;
+    /* border: 2px solid yellow; */
+}
+.profile-menu ul{
+    list-style: none;
+}
+.profile-menu ul li i{
+    padding: 0 12px 0 0;
+    font-size: 15px;
+}
+.profile-menu ul li{
+    padding: 15px;
+    border-radius: 7px;
+    border-bottom: 0.3px solid rgb(199, 199, 199);
+}
+.pen{
+    color: violet;
+}
+.book{
+    color:  purple;
+}
+.cart{
+    color: orange;
+}
+.heart{
+    color: green;
+}
+.comments{
+    color: red;
+}
+.arw{
+    color: rgb(78, 182, 216);
+}
+.separate{
+    display: flex;
+    justify-content: space-between;
+}
