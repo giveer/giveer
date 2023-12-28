@@ -3,7 +3,7 @@ import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 
 function NewPassword() {
     return (
-        <div className="center-div">
+        <div className="center-div main-newpassword">
             <div className='newpassword'>
                 <div className='newpass-2'>
                     <DonationIcon />

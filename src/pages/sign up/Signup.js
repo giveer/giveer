@@ -90,7 +90,7 @@ function Signup() {
         }
     };
     return (
-        <div className="center-div">
+        <div className="center-div main-signup">
             <div className='signup'>
                 <div className='signup-1'>
                     <h4 className="g-h-4">Create Account</h4>

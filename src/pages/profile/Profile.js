@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Profile() {
     return (
-        <div className='main profile-main'>
+        <div className='main-profile profile-main'>
             <div className='profile-svg'>
                 <div className='profile-div1'>
                     <span className='profile-span'><i className="fa-solid fa-user profile-icon-image"></i></span>

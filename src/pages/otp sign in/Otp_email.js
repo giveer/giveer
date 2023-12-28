@@ -3,7 +3,7 @@ import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 
 function Otp_email() {
     return (
-        <div className="center-div">
+        <div className="center-div main-otp-email">
             <div className='otpmail'>
                 <div className='otpmail-1'>
                     <h4 className='g-h-4'>OTP Signin</h4>

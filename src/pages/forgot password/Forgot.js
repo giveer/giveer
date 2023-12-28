@@ -3,7 +3,7 @@ import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 
 function Forgot() {
     return (
-        <div className="center-div">
+        <div className="center-div main-forgot">
             <div className='forgot'>
                 <div className='forgot-1'>
                     <DonationIcon />
