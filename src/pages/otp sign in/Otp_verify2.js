@@ -52,14 +52,17 @@ function Otp_verify2() {
             if(document.getElementsByClassName('otp-input')[i].value!=''){
                 otpstr += document.getElementsByClassName('otp-input')[i].value;
             }else{
-                document.getElementsByClassName('otp-input')[i].style.borderBottom = '2px solid red';
+                console.log("else");
+                document.getElementsByClassName('otp-input')[i].style.border = '2px solid red';
             }
         }
         otp = parseInt(otpstr);
         console.log('OTP is ', otp);
+
         if(otpstr.length==document.getElementById('otp-max-length').value){
             //API call...
         }
+
     }
     return (
         <div className="center-div">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Profile() {
     return (
-        <div className='main'>
+        <div className='main profile-main'>
             <div className='profile-svg'>
                 <div className='profile-div1'>
                     <span className='profile-span'><i className="fa-solid fa-user profile-icon-image"></i></span>
@@ -17,19 +17,19 @@ function Profile() {
             <div className='tri-dbf'>
                 <Link to=''>
                     <div className='donate'>
-                        <span><i class="fa-thin fa-hand-holding-heart donate-icon"></i></span>
+                        <i class="fa-light fa-hand-holding-heart donate-icon"></i>
                         <p>Donated</p>
                     </div>
                 </Link>
                 <Link to=''>
-                    <div className='benefit'>
-                        <span><i class="fa-thin fa-gift gift-icon"></i></span>
+                    <div className='benefit'> 
+                        <span><i class="fa-light fa-gift gift-icon"></i></span>
                         <p>Benefited</p>
                     </div>
                 </Link>
                 <Link to='/signin'>
                     <div className='fav'>
-                        <span><i className="fa-thin fa-heart favourite-icon"></i></span>
+                        <span><i className="fa-light fa-heart favourite-icon"></i></span>
                         <p>Favourite</p>
                     </div>
                 </Link>

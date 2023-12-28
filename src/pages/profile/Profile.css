@@ -3,10 +3,13 @@
 .main{
     font-size: 0.8rem;
 }
+.profile-main{
+    padding: 10px;
+}
 .profile-svg{
     background-color: #5a5a5a;
     height: 25vh;
-    width: 100vw;
+    width: 100%;
     border-radius: 7.5px;
     display: flex;
 }
@@ -94,26 +97,27 @@
     border-radius: 7px;
 }
 .donate-icon, .gift-icon, .favourite-icon{
-    font-size: 30px;
+    font-size: 1.7rem;
     color:  var(--first-color);
     padding: 0 0 7px 0;
 }
 .profile-menu{
-    margin: 0 20px 52px;
+    /* margin: 0 20px 52px; */
     text-decoration: none;
     /* border: 2px solid yellow; */
 }
 .profile-menu ul{
+    padding: 0;
     list-style: none;
 }
-.profile-menu ul li i{
+.profile-menu ul li span:nth-child(1) i{
     padding: 0 12px 0 0;
     font-size: 15px;
 }
 .profile-menu ul li{
     padding: 15px;
-    border-radius: 7px;
-    border-bottom: 0.3px solid rgb(199, 199, 199);
+    /* border-radius: 7px; */
+    border-bottom: 0.3px solid rgb(199 199 199 / 32%);
 }
 .pen{
     color: violet;
