@@ -64,7 +64,7 @@ function Navbar() {
                             <Link to='' onClick={hide}><i className="fa-regular fa-heart"></i>Favorite</Link>
                         </li>
                         <li>
-                            <Link to='' onClick={hide}><i className="fa-regular fa-user"></i>My Profile</Link>
+                            <Link to='/profile' onClick={hide}><i className="fa-regular fa-user"></i>My Profile</Link>
                         </li>
                         <li>
                             <Link to='' onClick={hide}><i className="fa-regular fa-address-card"></i>About Us</Link>

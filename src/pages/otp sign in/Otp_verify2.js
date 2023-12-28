@@ -51,7 +51,6 @@ function Otp_verify2() {
         for(let i=0;i<(document.getElementById('otp-max-length').value);i++){
             if(document.getElementsByClassName('otp-input')[i].value!=''){
                 otpstr += document.getElementsByClassName('otp-input')[i].value;
-                console.log("if");
             }else{
                 console.log("else");
                 document.getElementsByClassName('otp-input')[i].style.border = '2px solid red';
@@ -59,6 +58,11 @@ function Otp_verify2() {
         }
         otp = parseInt(otpstr);
         console.log('OTP is ', otp);
+
+        if(otpstr.length==document.getElementById('otp-max-length').value){
+            //API call...
+        }
+
     }
     return (
         <div className="center-div">
