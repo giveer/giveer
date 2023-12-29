@@ -1,4 +1,5 @@
 import './Otp_email.css';
+import { Link } from 'react-router-dom';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 
 function Otp_email() {
@@ -14,7 +15,7 @@ function Otp_email() {
                             <input type="text" name="email" className="g-input-field-1" placeholder="Email" />
                         </div>
                         <div className='bts'>
-                            <a className='bts' href="signin">Back to Signin</a>
+                            <Link to='/signin' className='bts'>Back to Signin</Link>
                         </div>
                         <div className="g-input-field-div-1">
                             <button type="button" className="g-btn-1">Send</button>

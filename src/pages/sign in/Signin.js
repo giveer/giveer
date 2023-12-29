@@ -1,4 +1,5 @@
 import './Signin.css';
+import { Link } from 'react-router-dom';
 import { ReactComponent as DonationIcon } from '../../assets/svg/donation.svg';
 
 function Signin() {
@@ -17,7 +18,8 @@ function Signin() {
                         <input type="password" name='password' className="g-input-field-1" placeholder='Password' />
                     </div>
                     <div className="g-input-field-div-1">
-                        <a href="./forgot" className="forget-password">Forget Password?</a>
+                        <Link to='/forgot' className="forget-password">Forgot Password?</Link>
+                        {/* <a href="./forgot" className="forget-password">Forget Password?</a> */}
                     </div>
                     <div className="g-input-field-div-1">
                         <button type="button" className="g-btn-1">Signin</button>
@@ -27,11 +29,12 @@ function Signin() {
                             <hr className="hrline"></hr><p className='space'>Or</p><hr></hr>
                         </div>
                     </div>
-
-                    <a href="./otpemail" className='otplog g-signin-p'>You can also Signin through Email OTP</a>
-                    {/* <div className="g-input-field-div-1">
-                        <button type="button" className="g-btn-1">OTP Login</button>
-                    </div> */}
+                    {/* <Link to='/optemail' className='otplog g-signin-p'>You can also Signin through Email OTP</Link> */}
+                    {/* <a href="./otpemail" className='otplog g-signin-p'>You can also Signin through Email OTP</a> */}
+                    <div className="g-input-field-div-1 no-margin">
+                        <Link to='/optemail' className='otplog g-signin-p'>You can also Signin through Email OTP</Link>
+                        {/* <button type="button" className="g-btn-1">OTP Login</button> */}
+                    </div>
                 </div>
                 <div className='signin-2'>
                     <DonationIcon />

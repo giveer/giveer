@@ -2,6 +2,8 @@
 
 
 .main-signin {
+    margin: 40px 0 40px 0;
+
     .g-signin-p {
         font-family: giveer-regular;
         color: var(--third-color);
@@ -23,7 +25,9 @@
         width: 115px;
         height: 0px;
     }
-
+    .no-margin{
+        margin-top: 10px;
+    }
     .space {
         padding: 0 25px;
     }
@@ -45,6 +49,7 @@
 
     /* Tab view style */
     @media only screen and (min-width: 426px) {
+        margin: 30px 0 30px 0;
         .signin {
             display: flex;
             align-items: center;
@@ -65,6 +70,7 @@
 
     /* Laptop view style */
     @media only screen and (min-width: 767px) {
+        margin: 20px 0 0px 0;
         .signin {
             display: flex;
             align-items: center;

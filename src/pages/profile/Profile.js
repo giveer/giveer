@@ -11,7 +11,7 @@ function Profile() {
                 <div className='profile-div2'>
                     <p className='user-name'>User Name</p>
                     <p className='user-email'>useremail@gmail.com</p>
-                    <Link to='' className='edit-profile'>Edit Profile <span><i class="fa-light fa-circle-chevron-right"></i></span></Link>
+                    <Link to='/eprofile' className='edit-profile'>Edit Profile <span><i class="fa-light fa-circle-chevron-right"></i></span></Link>
                 </div>
             </div>
             <div className='tri-dbf'>
@@ -37,10 +37,10 @@ function Profile() {
             <div className='profile-menu'>
                 <ul>
                     <li>
-                        <Link to=''><div className='separate'><span><i className="fa-regular fa-user-pen pen"></i>Edit Profile</span><span><i class="fa-regular fa-chevron-right"></i></span></div></Link>
+                        <Link to='/eprofile'><div className='separate'><span><i className="fa-regular fa-user-pen pen"></i>Edit Profile</span><span><i class="fa-regular fa-chevron-right"></i></span></div></Link>
                     </li>
                     <li>
-                        <Link to=''><div className='separate'><span><i className="fa-regular fa-book-heart book"></i>Product Posted</span><span><i class="fa-regular fa-chevron-right"></i></span></div></Link>
+                        <Link to='/productpost'><div className='separate'><span><i className="fa-regular fa-book-heart book"></i>Product Posted</span><span><i class="fa-regular fa-chevron-right"></i></span></div></Link>
                     </li>
                     <li>
                         <Link to=''><div className='separate'><span><i className="fa-regular fa-cart-shopping cart"></i>Product Brought</span><span><i class="fa-regular fa-chevron-right"></i></span></div></Link>

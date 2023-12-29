@@ -2,6 +2,14 @@
 
 
 .main-otp-email {
+    .giveer-p{
+        display: flex;
+        align-items: center;
+    }
+    .bts{
+        display: flex;
+        align-items: center;
+    }
     .otpmail {
         width: 75%;
         display: flex;

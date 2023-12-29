@@ -2,11 +2,17 @@
 
 
 .main-edit-profile {
-    .edit-phone {
-        margin: 70px 10px 0;
+    font-size: .8rem;
+    margin: 57px 0px 60px 0;
+
+    /* .topic{
+        background-color: rgb(167, 236, 231);
+    } */
+    .span1{
+        margin: 0 0 0 1.5rem;
+    }
+    .span2{
+        margin-left: 1rem;
     }
 
-    .phone {
-        color: red;
-    }
 }
