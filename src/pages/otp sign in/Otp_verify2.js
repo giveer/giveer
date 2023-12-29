@@ -65,7 +65,7 @@ function Otp_verify2() {
 
     }
     return (
-        <div className="center-div">
+        <div className="center-div  main-otp-verify">
             <div className='container'>
                 <div className="container-1">
                     <h4 className='g-h-4'>Enter OTP Code</h4>

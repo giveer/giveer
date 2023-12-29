@@ -1,55 +1,61 @@
-.g-signup-p {
-    font-family: giveer-regular;
-    color: var(--third-color);
-    text-align: center;
-    margin: 0 15px;
-}
-.signup-2 {
-    display: none;
-}
-/* Tab view style */
-@media only screen and (min-width:426px){
-    .signup {
-        display: flex;
-        align-items: center;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 2%;
-        border-radius: 5px;
-    }
-    
-    .signup-1 {
-        width: 40vw
-    }
-    
-    .signup-2 {
-        display: block;
-        width: 40vw;
-    }
-}
+@import '../../Style.css';
 
-/* Laptop view style */
-@media only screen and (min-width: 767px){
-    .signup {
-        display: flex;
-        align-items: center;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 2%;
-        border-radius: 5px;
+.main-signup {
+    .g-signup-p {
+        font-family: giveer-regular;
+        color: var(--third-color);
+        text-align: center;
+        margin: 0 15px;
     }
-    
-    .signup-1 {
-        width: 25vw
-    }
-    
-    .signup-2 {
-        width: 25vw;
-        display: block;
-    }
-}
 
-.password-eye{
-    position: absolute;
-    top: 8px;
-    right: 7px;
-    color: var(--third-color);
+    .signup-2 {
+        display: none;
+    }
+
+    /* Tab view style */
+    @media only screen and (min-width:426px) {
+        .signup {
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .signup-1 {
+            width: 40vw
+        }
+
+        .signup-2 {
+            display: block;
+            width: 40vw;
+        }
+    }
+
+    /* Laptop view style */
+    @media only screen and (min-width: 767px) {
+        .signup {
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .signup-1 {
+            width: 25vw
+        }
+
+        .signup-2 {
+            width: 25vw;
+            display: block;
+        }
+    }
+
+    .password-eye {
+        position: absolute;
+        top: 8px;
+        right: 7px;
+        color: var(--third-color);
+    }
 }

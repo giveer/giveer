@@ -1,0 +1,12 @@
+@import '../../Style.css';
+
+
+.main-edit-profile {
+    .edit-phone {
+        margin: 70px 10px 0;
+    }
+
+    .phone {
+        color: red;
+    }
+}

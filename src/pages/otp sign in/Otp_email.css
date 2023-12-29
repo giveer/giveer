@@ -1,55 +1,60 @@
 @import '../../Style.css';
 
-.otpmail{
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-}
-/* .optmail-1{
+
+.main-otp-email {
+    .otpmail {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* .optmail-1{
     width: 75%;
 } */
-.otpmail-2{
-    display: none;
-}
-/* Tab view style */
-@media only screen and (min-width: 426px){
-    .otpmail {
-        display: flex;
-        align-items: center;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 2%;
-        border-radius: 5px;
-    }
-    
-    .otpmail-1 {
-        
-        width: 40vw;
-    }
-    
     .otpmail-2 {
-        display: block;
-        width: 40vw;
+        display: none;
     }
-}
 
-/* Laptop view style */
-@media only screen and (min-width: 767px){
-    .otpmail {
-        display: flex;
-        align-items: center;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 2%;
-        border-radius: 5px;
+    /* Tab view style */
+    @media only screen and (min-width: 426px) {
+        .otpmail {
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .otpmail-1 {
+
+            width: 40vw;
+        }
+
+        .otpmail-2 {
+            display: block;
+            width: 40vw;
+        }
     }
-    
-    .otpmail-1 {
-        
-        width: 25vw;
-    }
-    
-    .otpmail-2 {
-        display: block;
-        width: 25vw;
-        
+
+    /* Laptop view style */
+    @media only screen and (min-width: 767px) {
+        .otpmail {
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .otpmail-1 {
+
+            width: 25vw;
+        }
+
+        .otpmail-2 {
+            display: block;
+            width: 25vw;
+
+        }
     }
 }

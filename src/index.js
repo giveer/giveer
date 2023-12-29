@@ -19,6 +19,7 @@ import Otp_verify from './pages/otp sign in/Otp_verify';
 import Otp_verify2 from './pages/otp sign in/Otp_verify2';
 import NoPageFound from './pages/404/NoPageFound';
 import Profile from './pages/profile/Profile';
+import Edit_profile from './pages/profile/Edit_profile';
 
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -48,7 +49,7 @@ export default function Main() {
             <Route path="otpverify2" element={<Otp_verify2/>} />
             <Route path="*" element={<NoPageFound />} />
             <Route path="profile" element={<Profile/>} />
-
+            <Route path="eprofile" element={<Edit_profile/>} />
         </Routes>
       </div>
     </Router>
