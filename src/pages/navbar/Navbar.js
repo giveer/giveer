@@ -18,7 +18,7 @@ function Navbar() {
         setIsOpen(false);
     }
     return (
-        <div>
+        <div className='main-navbar'>
             <nav className='mobile-nav'>
                 {/* Mobile Header Navbar */}
                 <div className='m-header'>

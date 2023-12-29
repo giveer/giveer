@@ -104,13 +104,13 @@ a{
 
 .g-input-icon-1 {
     position: absolute;
-    top: 5px;
+    top: 14px;
     left: 7px;
     color: var(--third-color);
 }
 
 .g-lable-1 {
-    position: relative;
+    /* position: relative; */
 }
 
 /*Input Error*/
