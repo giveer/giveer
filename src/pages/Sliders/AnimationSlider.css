@@ -1,5 +1,8 @@
 @import url(../../Style.css);
 .d-block{
-    border-radius: 10px !important;
     padding: 10px;
+}
+.rounded-image{
+    border-radius: 20px;
+    overflow: hidden;
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import './AnimationSlider.css'
 import image1 from '../../assets/slider/Slide_1.jpg'
-import image2 from '../../assets/slider/Slide_2.jpg'
+import image2 from '../../assets/slider/Slide_6.jpg'
 import image3 from '../../assets/slider/Slide_3.jpg'
 import image4 from '../../assets/slider/Slide_4.jpg'
 import image5 from '../../assets/slider/Slide_5.jpg'
-import image6 from '../../assets/slider/Slide_6.jpg'
+
 
 function AnimationSlider() {
     const styles1 = {
@@ -18,19 +18,20 @@ function AnimationSlider() {
         justifyContent: 'center',
         padding: 0,
         marginRight: '15%',
-        marginBottom: '1rem',
+        marginBottom: '1.3rem',
         marginLeft: '15%',
         listStyle: 'none'
       };
       const styles2 = {
-        width: '15px',
-        height: '8px',
+        width: '10px',
+        height: '5px',
         borderTop: '0',
         borderBottom: '0',
         borderRadius: '50px'
       };
+      
   return (
-    <div className="container" style={{width: '100vw', padding: '10px'}}>
+    <div className="container" style={{width: '100vw'}}>
             <div className="row justify-content-center">
                 <div className="col-sm-8" style={{padding: 0}}>
                     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -43,19 +44,19 @@ function AnimationSlider() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active" id="fimg">
-                                <a href="./dog.php"><img src={image1} className="d-block w-100" alt="..." /></a>
+                                <a href="./dog.php"><img src={image1} className="d-block w-100 rounded-image" alt="..." /></a>
                             </div>
                             <div className="carousel-item" id="simg">
-                                <a href="./fish.php"><img src={image2} className="d-block w-100" alt="..." /></a>
+                                <a href="./fish.php"><img src={image2} className="d-block w-100 rounded-image" alt="..." /></a>
                             </div>
                             <div className="carousel-item" id="timg">
-                                <a href="./cat.php"><img src={image3} className="d-block w-100" alt="..." /></a>
+                                <a href="./cat.php"><img src={image3} className="d-block w-100 rounded-image" alt="..." /></a>
                             </div>
                             <div className="carousel-item" id="foimg">
-                                <a href="./dog.php"><img src={image4} className="d-block w-100" alt="..." /></a>
+                                <a href="./dog.php"><img src={image4} className="d-block w-100 rounded-image" alt="..." /></a>
                             </div>
                             <div className="carousel-item" id="fiimg">
-                                <a href="./slider1"><img src={image5} className="d-block w-100" alt="..." /></a>
+                                <a href="./slider1"><img src={image5} className="d-block w-100 rounded-image" alt="..." /></a>
                             </div>
                         
                         </div>
