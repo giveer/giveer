@@ -3,16 +3,57 @@
 
 .main-edit-profile {
     font-size: .8rem;
-    margin: 57px 0px 60px 0;
+    margin: 67px 0px 60px 0;
 
-    /* .topic{
-        background-color: rgb(167, 236, 231);
-    } */
+    .topic{
+        margin: 10px 0;
+    }
     .span1{
         margin: 0 0 0 1.5rem;
     }
     .span2{
         margin-left: 1rem;
+    }
+    .profile-icon-image {
+        font-size: 40px;
+        color: rgb(161, 190, 181);
+    }
+
+    .profile-div1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: rgb(235, 235, 235);
+    }
+    .profile-span {
+        /* display: block; */
+        border: 2px solid rgb(127, 228, 214);
+        border-radius: 50%;
+        height: 4.5rem;
+        width: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        /* position: relative; */
+    }
+    .plus{
+        color: white;
+        background-color: red;
+        font-size: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 160px;
+    }
+    .user-edit-icon{
+        padding: 0 0 0 10px;
+    }
+    .edit-username{
+        color: solid black;
+        font-style: italic;
+        margin-top: 5px;
     }
 
 }

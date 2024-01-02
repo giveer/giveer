@@ -7,6 +7,14 @@ function Edit_profile(){
             <div className='topic'>
                 <span className='span1'><Link to='/profile'><i class="fa-regular fa-arrow-left"></i></Link></span><span className='span2'>Edit Profile</span>
             </div>
+            <div className='profile-div1'>
+                    <div><span className='profile-span'><i className="fa-solid fa-user profile-icon-image"></i><span><i class="fa-regular fa-circle-plus plus"></i></span></span></div>
+                    <div className='edit-username'><label for='fok' >User Name<span className='user-edit-icon'><i class="fa-regular fa-pen-to-square"></i></span></label></div>
+            </div>
+            <div className="g-input-field-div-1">
+                <label className='g-lable-1'><i class="fa-duotone fa-user-tie g-input-icon-1"></i></label>
+                <input type="text" name='uname' id='fok' className="g-input-field-1" placeholder='Edit User Name'/>
+            </div>
             <div className="g-input-field-div-1">
                 <label className='g-lable-1'><i className="fa-regular fa-phone g-input-icon-1"></i></label>
                 <input type="tel" maxLength='10' name='mobile' className="g-input-field-1" placeholder='Enter Phone Number'/>
