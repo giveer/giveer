@@ -1,27 +1,10 @@
 import './Product_post.css';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
 import $ from 'jquery';
+import 'jquery-ui';
  
-function Product_post(){
-    // const [showOnDisplay, setShowOnDisplay] = useState(true);
-
-    // const handleSwipe = (direction) => {
-    //     if (direction === 'left') {
-    //         setShowOnDisplay(false);
-    //     } else if (direction === 'right') {
-    //         setShowOnDisplay(true);
-    //     }
-    // };
-    // const handleClick1 = () => {
-    //     console.log('clicked on display');
-    //     // document.getElementsByClassName('odis-content').style.transform = 'translateX(0%)';
-    // }
-    // const handleClick2 = () => {
-    //     console.log('clicked given');
-    //     // document.getElementsByClassName('odis-content').style.transform = 'translateX(-100%)';
-    // }
+function Product_post(){ 
 
     $(document).ready(function(){
         $('ul.tabs').tabs({
