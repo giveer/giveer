@@ -1,0 +1,67 @@
+@import url(../../Style.css);
+
+.main-homefooter {
+
+    /* Mobile Footer Navbar Style */
+    .m-footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 100;
+        background-color: #ffffff;
+    }
+
+    .m-footer ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0.5em 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .m-footer ul a {
+        color: var(--second-color);
+    }
+
+    .m-footer ul li:nth-child(1) a {
+        color: var(--first-color);
+    }
+
+    .m-footer ul li:nth-child(3) a {
+        background-color: var(--first-color);
+        height: 35px;
+        width: 35px;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-footer ul li:nth-child(3) a i {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .m-footer ul li:nth-child(4) {
+        position: relative;
+    }
+
+    .chat-count {
+        color: #ffffff;
+        background-color: var(--first-color);
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        font-size: 8px;
+        text-align: center;
+        z-index: 1;
+        right: -3px;
+        top: -3px;
+        font-weight: bold;
+        border-radius: 50%;
+    }
+}

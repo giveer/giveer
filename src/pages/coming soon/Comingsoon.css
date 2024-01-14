@@ -1,5 +1,5 @@
 @import '../../Style.css';
-
+.coming_soon{
 @font-face {
     font-family: giveer-bold;
     src: url(../../assets/fonts/cera\ round/FONTSPRINGDEMO-CeraRoundProBlackRegular.woff);
@@ -56,4 +56,5 @@
     80% {
         color: var(--first-color);
     }
+}
 }

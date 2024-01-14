@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-//import {Switch } from 'react-router-dom';
-// import { BrowserRouter, Routes, Route, Switch} from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import Comingsoon from './pages/coming soon/Comingsoon';
-
 import Signin from './pages/sign in/Signin';
 import Signup from './pages/sign up/Signup';
 import Signup2 from './pages/sign up/Signup2';
@@ -21,20 +19,29 @@ import NoPageFound from './pages/404/NoPageFound';
 import Profile from './pages/profile/Profile';
 import Edit_profile from './pages/profile/Edit_profile';
 import Product_post from './pages/product posted/Product_post';
+import Search from './pages/Search/Search';
+import Favorite from './pages/Icons/Favorite';
+import HomeFooter from './pages/Footer/HomeFooter';
 
+// Component for rendering HomeFooter based on the route
+const RenderFooter = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/' || location.pathname === '/index';
+  return isHomePage ? <HomeFooter /> : null;
+};
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <Comingsoon />
-//   </React.StrictMode>
-// );
-//Routes
+const RenderNavbar = () => {
+  const location = useLocation();
+  if(location.pathname === '/' || location.pathname === '/index'){
+    return <Navbar />
+  }
+}
+
 export default function Main() {
   return (
     <Router>
       <div>
-        <Navbar />
+        <RenderNavbar />
         <Routes>
             <Route path="/" element={<Comingsoon />} />
             <Route path="/Navbar" element={<Navbar />} />
@@ -52,7 +59,10 @@ export default function Main() {
             <Route path="profile" element={<Profile/>} />
             <Route path="eprofile" element={<Edit_profile/>} />
             <Route path="productpost" element={<Product_post/>} />
+            <Route path="search" element={<Search />} />
+            <Route path="icon" element={<Favorite />} />
         </Routes>
+        <RenderFooter />
       </div>
     </Router>
   );
