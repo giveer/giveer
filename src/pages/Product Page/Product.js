@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Product.css'
 import Navbar2 from '../navbar/Navbar2'
 import SearchCardHeader from '../Search/SearchCardHeader'
@@ -53,6 +53,23 @@ function Product() {
             location: "salem"
         }
     ]
+
+    const [favorite, setFavorite] = useState(jsonData[0].counts[0].favorite);
+
+    const increaseCount = () => {
+        const checkbox = document.getElementById("checkbox" + jsonData[0].id);
+        if(checkbox.checked && favorite==jsonData[0].counts[0].favorite){
+            setFavorite(favorite+1)
+        }
+        if(checkbox.checked && favorite==jsonData[0].counts[0].favorite+1){
+            setFavorite(favorite-1)
+        }
+    }
+  
+
+  useEffect(() => {
+    console.log('Favorite Count:', favorite);
+  }, [favorite]);
     return (
         <div className='main-product'>
             <Navbar2 />
@@ -75,7 +92,7 @@ function Product() {
                 </div>
                 <div className='product-count'>
                 <i class="fa-solid fa-heart"></i>
-                    <NumberAnimation endValue={jsonData[0].counts[0].favorite} />
+                    <NumberAnimation endValue={favorite} />
                     <span className='product-count-name'>Favorite</span>
                 </div>
                 <div className='product-count'>
@@ -94,7 +111,7 @@ function Product() {
             </div>
             <div className='product-button'>
                 <button className='chat-btn'>Chat</button>
-                <div className='fav-icon'>
+                <div className='fav-icon' onClick={increaseCount}>
                     <Favorite name={jsonData[0].id} />
                 </div>
                 <button className='request-btn'>Request</button>
