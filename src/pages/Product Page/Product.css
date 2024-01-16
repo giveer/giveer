@@ -1,0 +1,200 @@
+@import url(../../Style.css);
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.main-product {
+    padding: 60px 0;
+
+    .head {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .product-card-head {
+        padding: 0;
+    }
+
+    .slider {
+        padding: 0 10px 10px 10px;
+    }
+
+    .image-gallery-slide {
+        width: 100% !important;
+        max-height: 200px !important;
+    }
+
+    .image-gallery-image {
+        border-radius: 5px !important;
+        width: 100%;
+        height: 200px;
+        background: #f8f9fa;
+        border-radius: 5px;
+    }
+
+    .image-gallery-thumbnail {
+        border-radius: 5px;
+    }
+
+    .image-gallery-thumbnail-image {
+        height: 45px !important;
+        object-fit: cover !important;
+        border-radius: 3px;
+    }
+
+    .image-gallery-thumbnails {
+        padding: 10px 0 3px 0;
+    }
+
+    .image-gallery-thumbnail.active,
+    .image-gallery-thumbnail:focus {
+        border: 3px solid var(--second-color);
+    }
+
+    /* count style */
+    .product-counts {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product-count {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+    }
+
+    .product-count i {
+        font-size: 2rem;
+    }
+
+    .product-count:nth-child(1) i {
+        background: linear-gradient(to right bottom, #FCCA09, #FB9A00);
+        background-clip: text;
+        -webkit-background-clip: text;
+        /* For some older browsers */
+        color: transparent;
+    }
+
+    .product-count:nth-child(1) span {
+        color: #FB9A00;
+    }
+
+    .product-count:nth-child(2) i {
+        background: linear-gradient(to right bottom, #06BBF4, #0092CD);
+        ;
+        background-clip: text;
+        -webkit-background-clip: text;
+        /* For some older browsers */
+        color: transparent;
+    }
+
+    .product-count:nth-child(2) span {
+        color: #0092CD;
+    }
+
+    .product-count:nth-child(3) i {
+        background: linear-gradient(to right bottom, #FD8ED2, #F14997);
+        background-clip: text;
+        -webkit-background-clip: text;
+        /* For some older browsers */
+        color: transparent;
+    }
+
+    .product-count:nth-child(3) span {
+        color: #F14997;
+    }
+
+    .product-count:nth-child(4) i {
+        background: linear-gradient(to right bottom, #00E2CD, #03BFB0);
+        background-clip: text;
+        -webkit-background-clip: text;
+        /* For some older browsers */
+        color: transparent;
+    }
+
+    .product-count:nth-child(4) span {
+        color: #03BFB0;
+    }
+
+    .product-count p {
+        position: absolute;
+        color: white;
+        top: 4px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .product-count-name {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* product-details style */
+    .product-details {
+        padding: 10px;
+    }
+    .product-name{
+        padding-bottom: 10px;
+    }
+    .product-location {
+        color: gray;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        font-size: .9rem;
+    }
+
+    .product-location i {
+        padding-right: 5px;
+    }
+
+    .product-discription-1 {
+        font-size: .8rem;
+        color: gray;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 10px 0;
+    }
+    .product-discription-2 {
+        padding-left: 30px;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    }
+
+    /* button style */
+    .product-button {
+        position: fixed;
+        width: 100%;
+        padding: 7px 10px;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.05) -1px -1px 2px 0px;
+    }
+
+    .request-btn {
+        flex: 1;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        border: 1px solid var(--first-color);
+        background-color: var(--first-color);
+        box-shadow: rgba(244, 51, 151, 0.05) 0px 6px 24px 0px, rgba(244, 51, 151, 0.08) 0px 0px 0px 1px;
+    }
+
+    .chat-btn {
+        flex: 1;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        border: 1px solid var(--second-color);
+        background-color: var(--second-color);
+        box-shadow: rgba(244, 51, 151, 0.05) 0px 6px 24px 0px, rgba(244, 51, 151, 0.08) 0px 0px 0px 1px;
+    }
+
+}

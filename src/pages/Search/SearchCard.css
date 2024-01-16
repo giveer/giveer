@@ -97,6 +97,7 @@
         padding: 5px;
         border-radius: 5px;
         color: white;
+        text-align: center;
         border: 1px solid var(--first-color);
         background-color: var(--first-color);
         box-shadow: rgba(244, 51, 151, 0.05) 0px 6px 24px 0px, rgba(244, 51, 151, 0.08) 0px 0px 0px 1px;
@@ -106,6 +107,7 @@
         padding: 5px;
         border-radius: 5px;
         color: white;
+        text-align: center;
         border: 1px solid var(--second-color);
         background-color: var(--second-color);
         box-shadow: rgba(244, 51, 151, 0.05) 0px 6px 24px 0px, rgba(244, 51, 151, 0.08) 0px 0px 0px 1px; 

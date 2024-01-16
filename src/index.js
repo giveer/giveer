@@ -22,6 +22,7 @@ import Product_post from './pages/product posted/Product_post';
 import Search from './pages/Search/Search';
 import Favorite from './pages/Icons/Favorite';
 import HomeFooter from './pages/Footer/HomeFooter';
+import Product from './pages/Product Page/Product';
 
 // Component for rendering HomeFooter based on the route
 const RenderFooter = () => {
@@ -61,6 +62,7 @@ export default function Main() {
             <Route path="productpost" element={<Product_post/>} />
             <Route path="search" element={<Search />} />
             <Route path="icon" element={<Favorite />} />
+            <Route path="product" element={<Product />} />
         </Routes>
         <RenderFooter />
       </div>

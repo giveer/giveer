@@ -1,4 +1,4 @@
-import './Testing.css';
+// import './Testing.css';
 // import React, { useState } from 'react';
 // import { Swipeable } from 'react-swipeable';
 
@@ -42,32 +42,34 @@ import './Testing.css';
 
 // export default Testing;
 
-import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
+// import React, { useState } from 'react';
+// import { useSwipeable } from 'react-swipeable';
 
-const Testing = () => {
-  // State to manage the content display
-  const [showOnDisplay, setShowOnDisplay] = useState(true);
+// const Testing = () => {
+//   // State to manage the content display
+//   const [showOnDisplay, setShowOnDisplay] = useState(true);
 
-  // Function to handle swipes
-  const handleSwipe = () => {
-    // Toggle content on swipe
-    setShowOnDisplay(!showOnDisplay);
-  };
+//   // Function to handle swipes
+//   const handleSwipe = () => {
+//     // Toggle content on swipe
+//     setShowOnDisplay(!showOnDisplay);
+//   };
 
-  // Swipeable hook
-  const handlers = useSwipeable({ onSwiped: handleSwipe });
+//   // Swipeable hook
+//   const handlers = useSwipeable({ onSwiped: handleSwipe });
 
-  return (
-    <div {...handlers} className={`swipeable-div ${showOnDisplay ? 'on-display' : 'given'}`}>
-      {/* Display content based on the state */}
-      {showOnDisplay ? (
-        <h1>On Display Content</h1>
-      ) : (
-        <h1>Other Content</h1>
-      )}
-    </div>
-  );
-};
+//   return (
+//     <div {...handlers} className={`swipeable-div ${showOnDisplay ? 'on-display' : 'given'}`}>
+//       {/* Display content based on the state */}
+//       {showOnDisplay ? (
+//         <h1>On Display Content</h1>
+//       ) : (
+//         <h1>Other Content</h1>
+//       )}
+//     </div>
+//   );
+// };
 
-export default Testing;
+// export default Testing;
+
+

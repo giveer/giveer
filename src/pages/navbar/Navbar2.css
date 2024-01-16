@@ -1,7 +1,7 @@
 @import url(../../Style.css);
 
-.main-searchnavbar{
-    .searchnavbar{
+.main-navbar2{
+    .navbar2{
         position: fixed;
         display: flex;
         flex-direction: row;
@@ -16,19 +16,19 @@
         z-index: 100;
         background-color: #ffffff;
     }
-    .searchnavbar-left{
+    .navbar2-left{
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    .searchnavbar-right{
+    .navbar2-right{
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 15px;
     }
-    .searchnavbar-heart{
+    .navbar2-heart{
         color: var(--first-color);
     }
 }
