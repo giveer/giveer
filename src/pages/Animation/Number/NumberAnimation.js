@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated } from 'react-spring'; //npm install react-spring
 
 const NumberAnimation = ({ endValue, symbol = '' }) => {
   const [number, setNumber] = useState(0);

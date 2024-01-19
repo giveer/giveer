@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Product.css'
 import Navbar2 from '../navbar/Navbar2'
 import SearchCardHeader from '../Search/SearchCardHeader'
-import ImageGallery from "react-image-gallery"; //https://www.npmjs.com/package/react-image-gallery
+import ImageGallery from "react-image-gallery"; //https://www.npmjs.com/package/react-image-gallery //npm install react-image-gallery
 import Favorite from '../Icons/Favorite'
 import NumberAnimation from '../Animation/Number/NumberAnimation';
 
@@ -58,63 +58,69 @@ function Product() {
 
     const increaseCount = () => {
         const checkbox = document.getElementById("checkbox" + jsonData[0].id);
-        if(checkbox.checked && favorite==jsonData[0].counts[0].favorite){
-            setFavorite(favorite+1)
+        if (checkbox.checked && favorite == jsonData[0].counts[0].favorite) {
+            setFavorite(favorite + 1)
         }
-        if(checkbox.checked && favorite==jsonData[0].counts[0].favorite+1){
-            setFavorite(favorite-1)
+        if (checkbox.checked && favorite == jsonData[0].counts[0].favorite + 1) {
+            setFavorite(favorite - 1)
         }
     }
-  
 
-  useEffect(() => {
-    console.log('Favorite Count:', favorite);
-  }, [favorite]);
+
+    useEffect(() => {
+        console.log('Favorite Count:', favorite);
+    }, [favorite]);
     return (
         <div className='main-product'>
             <Navbar2 />
             <div className='head'>
                 <SearchCardHeader product={jsonData[0]} />
             </div>
-            <div className='slider'>
-                <ImageGallery items={jsonData[0].image} showNav={false} showPlayButton={false} showFullscreenButton={false} />
-            </div>
-            <div className='product-counts'>
-                <div className='product-count'>
-                <i class="fa-solid fa-octagon"></i>
-                    <NumberAnimation endValue={jsonData[0].counts[0].request} />
-                    <span className='product-count-name'>Request</span>
+            <div className='product-body'>
+                <div>
+                    <div className='slider'>
+                        <ImageGallery items={jsonData[0].image} showNav={false} showPlayButton={false} showFullscreenButton={false} />
+                    </div>
+                    <div className='product-button'>
+                        <button className='chat-btn'>Chat</button>
+                        <div className='fav-icon' onClick={increaseCount}>
+                            <Favorite name={jsonData[0].id} />
+                        </div>
+                        <button className='request-btn'>Request</button>
+                    </div>
                 </div>
-                <div className='product-count'>
-                <i class="fa-solid fa-comment"></i>
-                    <NumberAnimation endValue={jsonData[0].counts[0].chat} />
-                    <span className='product-count-name'>Chat</span>
+                <div>
+                    <div className='product-counts'>
+                        <div className='product-count'>
+                            <i class="fa-solid fa-octagon"></i>
+                            <NumberAnimation endValue={jsonData[0].counts[0].request} />
+                            <span className='product-count-name'>Request</span>
+                        </div>
+                        <div className='product-count'>
+                            <i class="fa-solid fa-comment"></i>
+                            <NumberAnimation endValue={jsonData[0].counts[0].chat} />
+                            <span className='product-count-name'>Chat</span>
+                        </div>
+                        <div className='product-count'>
+                            <i class="fa-solid fa-heart"></i>
+                            <NumberAnimation endValue={favorite} />
+                            <span className='product-count-name'>Favorite</span>
+                        </div>
+                        <div className='product-count'>
+                            <i class="fa-solid fa-badge"></i>
+                            <NumberAnimation endValue={jsonData[0].counts[0].chance} symbol={"%"} />
+                            <span className='product-count-name'>chance %</span>
+                        </div>
+                    </div>
+                    <div className='product-details'>
+                        <p className='product-name'>{jsonData[0].productName}</p>
+                        <p className='product-location'><i class="fa-solid fa-location-dot"></i>{jsonData[0].location}</p>
+                        <div className='product-discription'>
+                            <p className='product-discription-1'>Details</p>
+                            <p className='product-discription-2'>{jsonData[0].ProductDiscription}</p>
+                        </div>
+                    </div>
                 </div>
-                <div className='product-count'>
-                <i class="fa-solid fa-heart"></i>
-                    <NumberAnimation endValue={favorite} />
-                    <span className='product-count-name'>Favorite</span>
-                </div>
-                <div className='product-count'>
-                <i class="fa-solid fa-badge"></i>
-                    <NumberAnimation endValue={jsonData[0].counts[0].chance} symbol={"%"}/>
-                    <span className='product-count-name'>chance %</span>
-                </div>
-            </div>
-            <div className='product-details'>
-                <p className='product-name'>{jsonData[0].productName}</p>
-                <p className='product-location'><i class="fa-solid fa-location-dot"></i>{jsonData[0].location}</p>
-                <div className='product-discription'>
-                    <p className='product-discription-1'>Details</p>
-                    <p className='product-discription-2'>{jsonData[0].ProductDiscription}</p>
-                </div>
-            </div>
-            <div className='product-button'>
-                <button className='chat-btn'>Chat</button>
-                <div className='fav-icon' onClick={increaseCount}>
-                    <Favorite name={jsonData[0].id} />
-                </div>
-                <button className='request-btn'>Request</button>
             </div>
         </div>
     )
