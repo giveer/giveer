@@ -29,7 +29,7 @@ function Navbar() {
                             </li>
                             <li>
                                 <ul>
-                                    <li><Link to='' onClick={hide}><i className="fa-regular fa-magnifying-glass"></i></Link></li>
+                                    <li><Link to='sitesearch' onClick={hide}><i className="fa-regular fa-magnifying-glass"></i></Link></li>
                                     <li><Link to='' onClick={hide}><i className="fa-solid fa-bell"></i></Link></li>
                                     <li>
                                         <div className={isOpen ? 'bars openbar' : 'bars'} onClick={toggleBars}>
@@ -49,7 +49,7 @@ function Navbar() {
                             <Link to='' onClick={hide}><i className="fa-regular fa-house"></i>Home</Link>
                         </li>
                         <li>
-                            <Link to='' onClick={hide}><i className="fa-regular fa-box-heart"></i>Donate</Link>
+                            <Link to='/donate' onClick={hide}><i className="fa-regular fa-box-heart"></i>Donate</Link>
                         </li>
                         <li>
                             <Link to='' onClick={hide}><i className="fa-regular fa-book-heart"></i>My Donation</Link>

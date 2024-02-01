@@ -1,0 +1,25 @@
+@import url(../../Style.css);
+
+.main-sitesearchlive{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: rgb(85 26 139 / 10%);
+    .live-search ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        padding: 0 15px;
+    }
+
+    .live-search-li {
+        padding: 10px 0;
+        color: var(--third-color);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        font-size: .9rem;
+    }
+}

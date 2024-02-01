@@ -1,9 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import './Search.css'
 import SearchCard from './SearchCard'
 import SearchNavbar from './SearchNavbar'
 
 function Search() {
+  const { query } = useParams();
+
+  // Set the recent searches in localStorage
+  const [recentSearches, setRecentSearches] = useState(() => {
+    const storedSearches = localStorage.getItem('recentSearches');
+    return storedSearches ? JSON.parse(storedSearches) : [];
+  });
+
+  useEffect(() => {
+    if (!recentSearches.includes(query)) {
+      setRecentSearches((prevSearches) => [query, ...prevSearches.slice(0, 4)]);
+    }else{
+      recentSearches.splice(recentSearches.indexOf(query), 1);
+      setRecentSearches((prevSearches) => [query, ...prevSearches.slice(0, 4)]);
+    }
+  }, [query]);
+
+  useEffect(() => {
+    localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
+  }, [recentSearches]);
+
   let jsonData = [
     {
       id: 1,
@@ -68,11 +90,11 @@ function Search() {
   ]
   return (
     <div className='main-search'>
-      <SearchNavbar />
-      {jsonData.map(data=>(
-        <SearchCard product={data}/>
+      <SearchNavbar query={query} />
+      {jsonData.map(data => (
+        <SearchCard product={data} />
       ))}
-        
+
 
     </div>
   )

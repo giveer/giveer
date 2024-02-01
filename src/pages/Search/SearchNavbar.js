@@ -1,13 +1,13 @@
 import React from 'react'
 import './SearchNavbar.css'
 import { Link } from 'react-router-dom'
-function SearchNavbar() {
+function SearchNavbar({query="giveer"}) {
   return (
     <div className='main-searchnavbar'>
       <div className='searchnavbar'>
         <div className='searchnavbar-left'>
           <i class="fa-solid fa-arrow-left"></i>
-          <p>dress</p>
+          <p>{query}</p>
         </div>
         <div className='searchnavbar-right'>
           <Link to=""><i class="fa-solid fa-magnifying-glass"></i></Link>

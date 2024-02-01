@@ -13,7 +13,7 @@
 //                 exercitationem.</p>
 //             <p style={{ fontFamily: "giveer-medium", padding: "10px" }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
 //                 exercitationem.</p>
-            
+
 //         </div>
 //     );
 // }

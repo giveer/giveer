@@ -20,7 +20,7 @@ function HomeFooter() {
                             <Link to='' onClick={hide}><i className="fa-light fa-heart"></i></Link>
                         </li>
                         <li>
-                            <Link to='' onClick={hide}><i className="fa-light fa-square-plus"></i></Link>
+                            <Link to='donate' onClick={hide}><i className="fa-light fa-square-plus"></i></Link>
                         </li>
                         <li>
                             <span className='chat-count'>2</span>
@@ -28,7 +28,7 @@ function HomeFooter() {
                         </li>
                         <li>
                             {/* <Link to='' onClick={hide}><i className="fa-light fa-bars-progress"></i></Link> */}
-                            <Link to='' onClick={hide}><i className="fa-light fa-user"></i></Link>
+                            <Link to='/profile' onClick={hide}><i className="fa-light fa-user"></i></Link>
                         </li>
                     </ul>
                 </div>

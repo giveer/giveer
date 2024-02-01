@@ -1,0 +1,33 @@
+@import url(../../Style.css);
+
+.main-sitesearch {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: rgb(85 26 139 / 10%);
+
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 15px;
+        background-color: white;
+    }
+
+    .back-arrow {
+        font-size: 1.4rem;
+    }
+
+    .search-bar-div {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .display-block{
+        display: block;
+    }
+
+    .display-none {
+        display: none;
+    }
+}

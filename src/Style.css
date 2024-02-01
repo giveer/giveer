@@ -10,6 +10,9 @@
     --second-color: #551a8b;
     --third-color: #777a7e;
 
+    --edit-color: #FB9A00;
+    --delete-color: red;
+
     --first-hover-color: #d8006c;
     --bg-lite-gray: #edeef0;
      /* box-shadow: 0 0 16px rgba(0,0,0,.05); https://forms.app/*/

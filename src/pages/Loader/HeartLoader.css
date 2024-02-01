@@ -1,0 +1,69 @@
+@import url(../../Style.css);
+.main-heartloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+.loader {
+    width: 51px;
+    aspect-ratio: 1;
+    color: var(--first-color);
+    background:
+        radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%) top left,
+        radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
+        linear-gradient(to bottom left, currentColor 42%, #0000 43%) bottom left,
+        linear-gradient(to bottom right, currentColor 42%, #0000 43%) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: l1 4s infinite;
+}
+
+@keyframes l1 {
+    0%{
+        color: var(--first-color);
+    }
+    25%{
+        color: #03BFB0;
+    }
+    50%{
+        color: var(--second-color);
+    }
+    75%{
+        color: #FB9A00;
+    }
+
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    opacity: 0.4;
+    animation: l3 1s infinite;
+}
+
+
+
+@keyframes l3 {
+    to {
+        transform: scale(1.8);
+        opacity: 0
+    }
+}
+
+.loader-name{
+    font-size: .8rem;
+    font-weight: bold;
+}

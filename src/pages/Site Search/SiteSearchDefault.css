@@ -1,0 +1,62 @@
+@import url(../../Style.css);
+
+.main-sitesearchdefault{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* background-color: rgb(85 26 139 / 10%); */
+    .recent-search {
+        padding: 10px 15px;
+        background-color: white;
+    }
+
+    .recent-search-title {
+        color: var(--second-color);
+        font-weight: bold;
+    }
+
+    .recent-search ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .recent-search-li {
+        padding: 10px 0;
+        color: var(--third-color);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        font-size: .9rem;
+    }
+
+    .popular-search {
+        padding: 10px 15px;
+        background-color: white;
+    }
+
+    .popular-search-title {
+        color: var(--second-color);
+        font-weight: bold;
+    }
+
+    .popular-search ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .popular-search-li {
+        padding: 5px 10px;
+        background-color: rgb(85 26 139 / 20%);
+        color: var(--second-color);
+        border-radius: 5px;
+        display: block;
+        font-size: .9rem;
+    }
+}

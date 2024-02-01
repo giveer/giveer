@@ -23,6 +23,13 @@ import Search from './pages/Search/Search';
 import Favorite from './pages/Icons/Favorite';
 import HomeFooter from './pages/Footer/HomeFooter';
 import Product from './pages/Product Page/Product';
+import HeartLoader from './pages/Loader/HeartLoader';
+import Progress from './pages/Loader/Progress';
+import Donate from './pages/Donate/Donate';
+import LocationPicker from './pages/Location Picker/LocationPicker';
+import Address from './pages/Address/Address';
+import SiteSearch from './pages/Site Search/SiteSearch';
+import Back from './Buttons/Back Button/Back';
 
 // Component for rendering HomeFooter based on the route
 const RenderFooter = () => {
@@ -60,9 +67,16 @@ export default function Main() {
             <Route path="profile" element={<Profile/>} />
             <Route path="eprofile" element={<Edit_profile/>} />
             <Route path="productpost" element={<Product_post/>} />
-            <Route path="search" element={<Search />} />
+            <Route path="search/q/:query" element={<Search />} />
             <Route path="icon" element={<Favorite />} />
             <Route path="product" element={<Product />} />
+            <Route path="loader" element={<HeartLoader />} />
+            <Route path="progress" element={<Progress />} />
+            <Route path='donate' element={<Donate />} />
+            <Route path='location' element={<LocationPicker />} />
+            <Route path='address' element={<Address />} />
+            <Route path='sitesearch' element={<SiteSearch />} />
+            <Route path='back' element={<Back />} />
         </Routes>
         <RenderFooter />
       </div>

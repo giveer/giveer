@@ -1,0 +1,348 @@
+@import url(../../Style.css);
+
+.main-donate {
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+
+    .image-upload-div,
+    .donation-details-div {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(244, 51, 151, 0.05) 0px 6px 24px 0px, rgba(244, 51, 151, 0.08) 0px 0px 0px 1px;
+        border-radius: 5px;
+    }
+
+    .image-upload-heading,
+    .donation-details-heading,
+    .location-heading {
+        font-size: 0.9rem;
+        background: #551a8b40;
+        border-radius: 5px 5px 0 0;
+        padding: 5px 10px;
+        color: var(--second-color);
+    }
+
+    /* .donation-details-heading {
+        background: linear-gradient(to right bottom, #FD8ED2, #F14997);
+    }
+
+    .location-heading {
+        background: linear-gradient(to right bottom, #00E2CD, #03BFB0);
+    } */
+
+    .image-upload-con {
+        padding: 15px 10px;
+    }
+
+    .image-upload {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: scroll;
+    }
+
+    .donation-details {
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .image-upload::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .image-upload {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .upload-btn-wrapper {
+        position: relative;
+        display: flex;
+    }
+
+    .upload-btn-wrapper div {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .btn {
+        border: 2px dashed var(--second-color);
+        color: var(--second-color);
+        background-color: white;
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+        font-size: 3rem;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .add-icon {
+        position: absolute;
+        font-size: 1rem;
+    }
+
+    .upload-btn-wrapper input[type=file] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .image-preview {
+        width: 90px;
+        height: 90px;
+        position: relative;
+    }
+
+    .image-preview img {
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+    }
+
+    .remove-image {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        background: none;
+        border: none;
+        display: flex;
+    }
+
+    .g-input-field-div-1 {
+        margin: 0;
+        font-size: 0.9rem;
+        padding: 5px 5px 5px 30px;
+    }
+
+    .g-input-field-1 {
+        padding: 3px 5px;
+    }
+
+    /* Address select style */
+    /* https://codepen.io/ismailvtl/pen/VwWKdgV */
+    .address-display .plan input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .address-display .plan {
+        cursor: pointer;
+        /* width: 48.5%; */
+        width: 100%;
+    }
+
+    .address-display .plan .plan-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 15px 15px 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 2px solid #e1e2e7;
+        border-radius: 5px;
+        -webkit-transition: -webkit-box-shadow 0.4s;
+        transition: -webkit-box-shadow 0.4s;
+        -o-transition: box-shadow 0.4s;
+        transition: box-shadow 0.4s;
+        transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+        position: relative;
+    }
+
+    .address-display .plan .plan-content img {
+        margin-right: 30px;
+        height: 72px;
+    }
+
+    .plan-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .plan-heading-right {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .plan-head-p {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 1.2rem;
+        color: #252f42;
+        margin: 0;
+    }
+
+    .address-display .plan .plan-details span {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 20px;
+        line-height: 24px;
+        color: #252f42;
+    }
+
+    .container .title {
+        font-size: 20px;
+        font-weight: 500;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        color: #252f42;
+        margin-bottom: 20px;
+    }
+
+    .address-display .plan .plan-details p {
+        color: #646a79;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .address-display .plan .plan-content:hover {
+        -webkit-box-shadow: 0px 3px 5px 0px #e8e8e8;
+        box-shadow: 0px 3px 5px 0px #e8e8e8;
+    }
+
+    .address-display .plan input[type="radio"]:checked+.plan-content:after {
+        content: "";
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        background: var(--first-color);
+        left: calc(20px - 4px);
+        top: calc(30% - 4px);
+        border-radius: 100%;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 0px 2px var(--first-color);
+    }
+
+    .address-display .plan input[type="radio"]:checked+.plan-content {
+        border: 2px solid var(--first-color);
+        background-color: rgba(244, 51, 151, 0.1);
+        -webkit-transition: ease-in 0.3s;
+        -o-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
+    }
+
+    .address-edit-btn,
+    .address-delete-btn {
+        background: none;
+        border: none;
+    }
+    .address-edit-btn{
+        color: var(--edit-color);
+    }
+    .address-delete-btn {
+        color: var(--delete-color);
+    }
+    /* @media screen and (max-width: 991px) {
+        .address-display {
+            margin: 0 20px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 40px;
+        }
+
+        .address-display .plan {
+            width: 100%;
+        }
+
+        .plan.complete-plan {
+            margin-top: 20px;
+        }
+
+        .address-display .plan .plan-content .plan-details {
+            width: 70%;
+            display: inline-block;
+        }
+
+        .address-display .plan input[type="radio"]:checked+.plan-content:after {
+            top: 45%;
+            -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            transform: translate(-50%);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .address-display .plan .plan-content .plan-details {
+            width: 60%;
+            display: inline-block;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        .address-display .plan .plan-content img {
+            margin-bottom: 20px;
+            height: 56px;
+            -webkit-transition: height 0.4s;
+            -o-transition: height 0.4s;
+            transition: height 0.4s;
+        }
+
+        .address-display .plan input[type="radio"]:checked+.plan-content:after {
+            top: 20px;
+            right: 10px;
+        }
+
+        .address-display .plan .plan-content .plan-details {
+            width: 100%;
+        }
+
+        .address-display .plan .plan-content {
+            padding: 20px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+        }
+    } */
+
+    .add-new-div{
+        text-align: end;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px
+    }
+    .add-new{
+        width: auto;
+        background-color: var(--second-color);
+        font-size: .8rem;
+    }
+    .pick-location{
+        width: auto;
+        background-color: var(--first-color);
+        font-size: .8rem;
+    }
+    .donate-btn{
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+}
+@media only screen and (min-width: 769px) {
+    .main-donate{
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+}
